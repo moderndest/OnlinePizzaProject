@@ -8,6 +8,19 @@ Date:
 */
 
 /* Full-width input fields */
+
+.cartButton{
+    position: absolute;
+    Top:4%;
+    right:5%;
+    width: 40px;
+	height: 34px;
+
+}
+.cartButton:hover{
+    opacity: 0.8;
+}
+
 input[type=text], input[type=password] {
     width: 100%;
     padding: 12px 20px;
@@ -19,14 +32,18 @@ input[type=text], input[type=password] {
 
 /* Set a style for all buttons */
 button {
-    /* background: url(/image/Button/LOGIN.png)center; */
-    background:transparent;
+    background:#4CAF50;
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
     border: none;
     cursor: pointer;
     width: 100%;
+}
+
+button.LoginButtonH {
+    background:transparent;
+    right:10%;
+    position: absolute;
 }
 
 button:hover {
@@ -54,7 +71,7 @@ img.avatar {
 
 .container {
     padding: 16px;
-    
+    background-color:#f1f1f1;
 }
 
 span.psw {
@@ -116,7 +133,25 @@ span.psw {
     from {transform: scale(0)} 
     to {transform: scale(1)}
 }
-
+@media screen and  (max-width:768px){
+    .cartButton{
+        position: absolute;
+        Top:4%;
+        right:10%;
+        width: 35px;
+        height: 24px;
+    
+    }
+    button.LoginButtonH {
+        background:transparent;
+        Top:0;
+        right:14%;
+        position: absolute;
+        
+    }
+    
+	
+}
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
     span.psw {

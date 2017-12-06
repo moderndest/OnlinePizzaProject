@@ -15,7 +15,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie-edge">
         <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/LoginStyle.css" />
         <script src="js/loginPopup.js"></script>
         <title>Online Pizza </title>
     </head>
@@ -38,11 +37,12 @@
                         </ul>
                     </nav>
                 </div>
-                <!-- Login Start   -->
-                <h2>Modal Login Form</h2>
-                
+                <a class="cartButton" href="cart.html">
+                        <img src="image/Button/cart.png">
+                 </a>
+                <!--  Login Start   -->    
 
-                <button  onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+                <button  class ="LoginButtonH" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
                     <img src="image/Button/user_Icon.png">
                 </button>
 
@@ -52,7 +52,7 @@
                   <form class="modal-content animate" action="/action_page.php">
                     <div class="imgcontainer">
                       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+                      <img src="image/icon/user.png" alt="Avatar" class="avatar">
                     </div>
                 
                     <div class="container">
@@ -66,12 +66,15 @@
                       <input type="checkbox" checked="checked"> Remember me
                     </div>
                 
-                    <div class="container" style="background-color:#f1f1f1">
+                    <div class="container">
                       <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
                       <span class="psw">Forgot <a href="#">password?</a></span>
                     </div>
                   </form>
                 </div>
+                 <!--  END Login   --> 
+
+                 
 
             </div>
             
