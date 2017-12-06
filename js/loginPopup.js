@@ -7,12 +7,3 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
-
-// Handle Loaded Imports
-    function handleLoad(event) {
-        console.log('Loaded import: ' + event.target.href);
-      }
-       // Handle Errors.
-      function handleError(event) {
-        console.log('Error loading import: ' + event.target.href);
-      }
