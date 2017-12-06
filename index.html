@@ -1,21 +1,63 @@
 <!DOCTYPE html>
+
+
 <html lang="en">
     <head>
+        <!--
+         Online Pizza 
+         Filename: index.html
+      
+         Author: Chatsuda Rattarasan   
+         Date:     
+         HTML5 and CSS3 Illustrated Unit P, Visual Workshop
+        -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <link rel="stylesheet" href="css/style.css" />
         <title>Online Pizza </title>
     </head>
     <body> 
-        <nav class="sitenavigation">
-            <ul>
-               <li><a href="HomePage.html">Home</a></li>
-               <li><a href="Menu.html">Menu</a></li>
-               <li><a href="Combo.html">Combo</a></li>
-               <li><a href="MyOrder.html">My Order</a></li>
-               <li><a href="AboutUs.html">About us</a></li>
-            </ul>
-         </nav>
+        <!--  HEADER SECTION -->
+        <header>
+            
+            <div id="header-inner">
+                <a href="index.html" id="img_header"><img src="image/Pic/HeaderIcon.png"></a>  
+            
+                <div id="header-nav">
+                    <nav>
+                        <a href="#" id="menu-icon"></a>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="Menu.html"> Menu</a></li>
+                            <li><a href="Combo.html">Combo</a></li>
+                            <li><a href="MyOrder.html">My Order</a></li>
+                            <li><a href="AboutUs.html">About Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            
+        </header>
+        <!--  END HEADER SECTION -->
+
+        <div class="clearfix"></div>
+            <div id="inner-wrapper">
+                <section class="one-third">
+                    <a href="Menu.html"> <img src="image/icon/Menu_Icon.png"></a>
+                </section>
+
+                <section class="one-third">
+                    <a href="Combo.html"><img src="image/icon/Combo_Icon.png"></a>
+                </section>
+
+                <section class="one-third">
+                    <a href="WhereIsMyPizza.html"><img src="image/icon/Where_is_my Pizza_Icon.png"></a>
+                </section>
+            </div>
+        </div>
+
+
     </body>
 
 </html>
