@@ -8,6 +8,7 @@ Date:
 */
 
 @import url("LoginStyle.css");
+@import url("SignUpStyle.css");
 
 * {
 	margin: 0;

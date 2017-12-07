@@ -31,8 +31,8 @@ input[type=text], input[type=password] {
 }
 
 /* Set a style for all buttons */
+
 button {
-    background:#4CAF50;
     color: white;
     padding: 14px 20px;
     border: none;
@@ -40,9 +40,16 @@ button {
     width: 100%;
 }
 
+/* Extra styles for the Login button */
+button.loginButton{
+    background:#4CAF50;
+}
+
+/* Extra styles for the LoginIcon button */
 button.LoginButtonH {
     background:transparent;
     right:10%;
+    Top:0;
     position: absolute;
 }
 
