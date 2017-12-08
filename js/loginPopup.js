@@ -14,3 +14,21 @@ window.onclick = function(event2) {
         modal2.style.display = "none";
     }
 }
+
+function myFunction() {
+    var x = document.getElementById("myInput");
+    if (x.type === "password") {
+        x.type = "text";
+    } else {
+        x.type = "password";
+    }
+}
+
+function btntest_onclick() {
+   var a = document.getElementsByClassName(signupbtn)
+   if(a.type == "submit")
+   {
+       window.location.href = "index.html";
+   }
+}
+
