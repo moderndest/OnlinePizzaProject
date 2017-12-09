@@ -1,0 +1,104 @@
+* {
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+/* U don't need to change body blackground 
+	Just cut this part out */
+
+	
+/* body {
+	background: #f8fcf5;
+	background-image: url('img/Pizza11.jpg');		
+	background-size: 34%;
+	font-family: 'Indie Flower', cursive;
+	line-height: 190%;
+	text-align: center;
+	text-transform: uppercase;		
+	min-width:490px;
+} */
+
+body {
+	width: 100%;
+	max-width: 100%;
+	margin: 0 auto;
+}
+container {
+	position: relative;
+	top: -80px;
+}
+
+.clearfix {
+	clear: both;
+	padding: 1%;
+}
+
+p {
+	color: white;
+	font-family: 'Indie Flower', cursive;
+	line-height: 190%;
+	text-align: center;
+	text-transform: capitalize;;		
+	;
+}
+.pizza {	
+	max-height: 300px;
+	min-height: 300px;
+	max-width: 300px;
+	min-width: 300px;
+	
+	border-color: #f2f2f2;
+	border-style: solid;
+	border-width: 5px;	
+	position: relative;
+} 
+.label {
+	position: relative;
+	top: -40px;
+	z-index: -40;
+}
+p {
+	position: relative;
+	top: -110px;
+}
+.section1 {
+	max-width: 350px;
+	margin: 2%;
+	display: block;
+	float: left;
+}
+
+.center {
+	margin: 0 auto;
+	max-width: 100%;
+	font-size: 200%;	
+}
+
+/*waypoints*/
+.os-animation{
+	opacity: 0;
+}
+.os-animation.animated{
+    opacity: 1;
+}
+@media screen and (max-width: 840px){
+
+	
+	.section1 {
+		max-width: 350px;
+		margin: 0 auto;
+		
+		display: block;
+		float: left;
+	}
+	.center {
+		margin: 0 auto;
+		max-width: 400px;
+		font-size: 200%;
+		
+	}
+	
+		
+	
+}
