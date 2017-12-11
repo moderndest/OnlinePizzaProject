@@ -30,7 +30,7 @@ header{
     height: 86px;
     width: 100%;
     position: absolute;
-    top: 64%;
+    top: 74%;
     left: 54%;
     transform: translate(-50%, -50%);
     
@@ -60,10 +60,11 @@ nav{
 	padding: 35px 20px 0 0;
 }
 #menu-icon{
-	background: url(/image/icon/icon.png)center;
+	background: url(../image/icon/icon.png)center;
 	width: 40px;
 	height: 34px;
 	display: hidden;
+	
 }
 
 ul{
@@ -114,7 +115,7 @@ a:hover, .current {
 /*--- Media Queries! ---*/
 @media screen and  (max-width:768px){
 	header{
-		position: absolute;
+		position: relative;
     }
     
     #header-nav{
@@ -122,7 +123,9 @@ a:hover, .current {
 
     }
 	#menu-icon{
-        /* float:right; */
+		/* float:right; */
+		position: absolute;
+		right: 5%;
 		display: inline-block;
 	}
 	nav:hover ul{

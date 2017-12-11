@@ -11,7 +11,8 @@
     </head>
     <body> 
             <!--  HEADER SECTION -->
-            <div id="header"></div>
+            <?php include 'header.php';?>
+            <!-- <div id="header"></div> -->
             <!--Remaining section-->
             <!-- Continue Coding here -->
     </body>

@@ -1,0 +1,134 @@
+#inner-wrapper{
+	max-width: 1500px;
+	margin: 0 auto;
+}
+
+#Comboheader{
+    /* margin-top: -5%; */
+    width:15%;
+}
+
+.one-third img{
+    padding-bottom: 10%;
+    /* padding-left: 10%;
+    padding-right: 10%; */
+} 
+.one-third{
+    padding-bottom: 10%;
+    
+
+}
+
+
+.set-wrapper{
+    width: 80%;
+
+}
+
+/* Small set  style configuration*/
+.pic-wrapper{
+    width:100%;   
+    
+}
+.label-wrapper {
+    width:95%; 
+    position: relative;
+    margin-top: -40%;
+    z-index: 0;
+}
+.text-wrapper {
+    position: relative;
+    margin-top: -35%;
+    margin-left: 9%;
+    transform: translate(-9%, -9%);
+    font-size: 100%;
+    color: #f3a816;
+
+    font-family: cursive;
+
+}
+#add-to-cart{
+    z-index: 4;
+    position: absolute;
+}
+
+/* Party set  style configuration*/
+
+.Partypic-wrapper{
+    
+    width:100%;
+    margin-top: 28;
+    padding: 10%;
+    /* height: 1px;    */
+    
+}
+.Partylabel-wrapper {
+
+    width:95%; 
+    position: relative;
+    margin-top: -5%;
+    z-index: 0;
+
+}
+.Partytext-wrapper {
+    position: relative;
+    margin-top: -35%;
+    margin-left: 9%;
+    transform: translate(-9%, -9%);
+    font-size: 100%;
+    
+    text-rendering: optimizeLegibility;
+    color: #f3a816;
+    font-family: cursive;
+
+
+}
+
+/* famaily set  style configuration*/
+.fampic-wrapper{
+    width:100%;
+  
+    
+}
+.famlabel-wrapper {
+    width:95%; 
+    position: relative;
+    margin-top: -5%;
+    z-index: 0;
+}
+.famtext-wrapper {
+    position: relative;
+    margin-top: -35%;
+    margin-left: 9%;
+    transform: translate(-9%, -9%);
+    font-size: 100%;
+    color: #f3a816;
+    font-family: cursive;
+}
+
+
+/* ADD TO CART*/
+.add-to-cartAnimate {
+    background:green;
+    font-size: 80%;
+   
+    /* background: url(../image/Button/plus.png)center; */
+}
+
+.btn, a.btn {
+	display: inline-block;
+	background: #cc1400;
+	color: #fff;
+	font: 1em 'PT Serif', serif;
+	padding: 0.3em 1em;
+	text-align: center;
+	border-radius: 4px;
+	border: 1px solid #a00;
+}
+#show-cart,#total-cart{
+	color: #fff;
+}
+
+div {
+	color: #fff;
+}

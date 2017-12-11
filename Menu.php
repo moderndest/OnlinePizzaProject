@@ -25,17 +25,17 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine"><!--pizza-->
         <link href="https://fonts.googleapis.com/css?family=Timmana" rel="stylesheet">
         <!--css-->
-        <link rel="stylesheet" type="text/css" href="css/style_menu.css"/>	
+        <!-- <link rel="stylesheet" type="text/css" href="css/style_menu.css"/>	 -->
 
     </head>
     <body> 
             <!--  HEADER SECTION -->
-            <div id="header"></div>
+            <?php include 'header.php';?>
             <!--Remaining section-->
 
             <!-- Continue Coding here -->
         <div class="center1">
-            <img src="image/icon/Pizza.png" class="os-animation" data-os-animation="flash" data-os-animation-delay=".3s">
+            <img id="Pizzaicon" src="image/icon/Pizza.png" class="os-animation" data-os-animation="flash" data-os-animation-delay=".3s">
    
                 <div class="center">                    
                     <section class="section1 os-animation" data-os-animation="bounceInLeft" data-os-animation-delay=".3s">					

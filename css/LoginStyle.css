@@ -10,6 +10,7 @@ Date:
 /* Full-width input fields */
 
 .cartButton{
+    
     position: absolute;
     Top:4%;
     right:5%;
@@ -19,6 +20,21 @@ Date:
 }
 .cartButton:hover{
     opacity: 0.8;
+}
+
+/* .cart{
+
+    background: url(../image/Button/cart.png)center;
+    width: 100%;
+	 
+}*/
+
+#totalItems{
+    position: absolute;
+    Top:8%;
+    right:25%;
+    color:white;
+    z-index:100;
 }
 
 input[type=text], input[type=password] {

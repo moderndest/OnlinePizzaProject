@@ -1,7 +1,7 @@
 <!DOCTYPE html>
         <!--
          Online Pizza 
-         Filename: index.html
+         Filename: index.php
       
          Author: Chatsuda Rattarasan   
          Date:  DEC 6 2017
@@ -15,7 +15,8 @@
         <link rel="stylesheet" href="css/style.css" >
         <script src="js/loginPopup.js"></script>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script> 
-        <script type="text/javascript" src="js/LoadFile.js"></script> 
+        <script type="text/javascript" src="js/LoadFile.js"></script>
+        <script type="text/javascript" src="js/addtocart.js"></script> 
         
 		
 
@@ -23,22 +24,23 @@
     </head>
     <body> 
         <!--  HEADER SECTION -->
-        <div id="header"></div>
+        <?php include 'header.php';?>
+        <!-- <div id="header"></div> -->
         
         <!--  END HEADER SECTION -->
 
         <div class="clearfix"></div>
         <div id="inner-wrapper">
             <section class="one-third">
-                <a href="Menu.html"> <img src="image/icon/Menu_Icon.png"></a>
+                <a href="Menu.php"> <img src="image/icon/Menu_Icon.png"></a>
             </section>
 
             <section class="one-third">
-                <a href="Combo.html"><img src="image/icon/Combo_Icon.png"></a>
+                <a href="Combo.php"><img src="image/icon/Combo_Icon.png"></a>
             </section>
 
             <section class="one-third">
-                <a href="WhereIsMyPizza.html"><img src="image/icon/Where_is_my Pizza_Icon.png"></a>
+                <a href="WhereIsMyPizza.php"><img src="image/icon/Where_is_my Pizza_Icon.png"></a>
             </section>
         </div>
 
