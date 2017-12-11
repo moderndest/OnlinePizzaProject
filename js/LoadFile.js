@@ -1,5 +1,7 @@
-<script>
-$(function(){
-    $("#header").load("header.html");
-  });
-  </script>
+// JavaScript Document
+
+
+$(document).ready(function(){
+	$('#header').load('header.html');
+});
+
