@@ -14,10 +14,10 @@
         <meta http-equiv="X-UA-Compatible" content="ie-edge">
         <link rel="stylesheet" href="css/style.css" >
         <script src="js/loginPopup.js"></script>
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script> 
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
         <script type="text/javascript" src="js/LoadFile.js"></script>
-        <script type="text/javascript" src="js/addtocart.js"></script> 
-        
+        <script  src="js/CartFunction.js"></script> 
 		
 
         <title>Online Pizza </title>
@@ -43,9 +43,12 @@
                 <a href="WhereIsMyPizza.php"><img src="image/icon/Where_is_my Pizza_Icon.png"></a>
             </section>
         </div>
+        
 
-
-
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+        <script  src="js/CartFunction.js"></script> 
+        <script >onlinePizzaCart.displayCarttotal();</script>
     </body>
 
 </html>

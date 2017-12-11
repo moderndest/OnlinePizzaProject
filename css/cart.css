@@ -36,9 +36,9 @@
 	border: 1px solid #ddd;
 }
 
-.shopping-cart tr:nth-child(even) {
-	background: #fafafa;
-}
+/* .shopping-cart tr:nth-child(even) {
+	 background: #fafafa; 
+} */
 
 .shopping-cart td.pdelete {
 	text-align: center;
@@ -70,13 +70,16 @@
 	background: #fafafa;
 }
 
-#sub-total, #shipping {
+#subtotal, #shipping {
 	margin: 1.5em 0;
 	text-align: right;
+	color:white;
+	
 }
 
 #sub-total span,
 #shipping span {
+
 	margin-left: 1em;
 }
 
@@ -92,3 +95,7 @@
 	margin: 1em 0;
 }
 
+
+tr, #sub-total strong, #sub-total span{
+	color: white;
+}
