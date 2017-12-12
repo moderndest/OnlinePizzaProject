@@ -42,19 +42,31 @@
                         <img src="image/Pic/Pepperoni.png" class="pizza">
                         <img src="image/label/labe.png" class="label">
                             <p>Pepperoni $5.99</p>
+
+			     <button class="add-to-cart" type="button">Add to cart</button>
+
 			    <a href="#0" class="cd-add-to-cart" data-price="5.99">Add to Cart</a>
+
                     </section>
                     <section class="section1 os-animation" data-os-animation="bounceInDown" data-os-animation-delay=".3s">
                         <img src="image/Pic/Supreme.png" class="pizza">
                         <img src="image/label/labe.png" class="label">
                             <p>Supreme $5.99</p>
+
+			    <button class="add-to-cart" type="button">Add to cart</button>
+
 			    <a href="#0" class="cd-add-to-cart" data-price="5.99">Add to Cart</a>
+
                     </section>
                     <section class="section1 os-animation" data-os-animation="bounceInRight" data-os-animation-delay=".3s">		
                         <img src="image/Pic/www.newyorkvinnyspizza.com.png" class="pizza">
                         <img src="image/label/labe.png" class="label">
                             <p>Customize $5.99</p>
+
+			    <button class="add-to-cart" type="button">Add to cart</button>
+
 			    <a href="#0" class="cd-add-to-cart" data-price="5.99">Add to Cart</a>
+
                     </section>
                 </div>
                 <div class="clearfix"></div>
@@ -64,19 +76,31 @@
                         <img src="image/Pic/wings_hot1.png" class="pizza">
                         <img src="image/label/labe.png" class="label">
                             <p>Baffalo wing $3.99</p>
+
+			    <button class="add-to-cart" type="button">Add to cart</button>
+
 			    <a href="#0" class="cd-add-to-cart" data-price="3.99">Add to Cart</a>
+
                     </section>
                     <section class="section1 os-animation" data-os-animation="fadeInUp" data-os-animation-delay=".5s">		
                         <img src="image/Pic/garlic_bread.png" class="pizza">
                         <img src="image/label/labe.png" class="label">
                             <p>bread $2.00</p>
+
+			    <button class="add-to-cart" type="button">Add to cart</button>
+
 			    <a href="#0" class="cd-add-to-cart" data-price="2.00">Add to Cart</a>
+
                     </section>
                     <section class="section1 os-animation" data-os-animation="fadeInUp" data-os-animation-delay=".7s">		
                         <img src="image/Pic/french-fries.png" class="pizza">
                         <img src="image/label/labe.png" class="label">
                             <p>french fries $3.00<p>
+
+			    <button class="add-to-cart" type="button">Add to cart</button>
+
 			    <a href="#0" class="cd-add-to-cart" data-price="3.00">Add to Cart</a>
+
                     </section>	
                 </div>
                 <div class="clearfix"></div>
@@ -86,22 +110,68 @@
                         <img src="image/Pic/Pepci1.png" class="pizza">
                         <img src="image/label/labe.png" class="label">
                             <p>Pepci $1.50<p>
+
+			    <button class="add-to-cart" type="button">Add to cart</button>
+
 			    <a href="#0" class="cd-add-to-cart" data-price="1.50">Add to Cart</a>
+
                     </section>
                     <section class="section1 os-animation" data-os-animation="jackInTheBox" data-os-animation-delay=".5s">		
                         <img src="image/Pic/Coke.png" class="pizza">
                         <img src="image/label/labe.png" class="label">
                             <p>Coke $1.50<p>
+
+			    <button class="add-to-cart" type="button">Add to cart</button>
+
 			    <a href="#0" class="cd-add-to-cart" data-price="1.50">Add to Cart</a>
+
                     </section>
                     <section class="section1 os-animation" data-os-animation="bounceInRight" data-os-animation-delay=".7s">		
                         <img src="image/Pic/sprite1.png" class="pizza">
                         <img src="image/label/labe.png" class="label">
                             <p>Sprite $1.50<p>
+
+			    <button class="add-to-cart" type="button">Add to cart</button>
+
 			    <a href="#0" class="cd-add-to-cart" data-price="1.50">Add to Cart</a>
+
                     </section>
                 </div>
         </div>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript">
+    $('.add-to-cart').on('click', function () {
+        var cart = $('.shopping-cart');
+        var imgtodrag = $(this).parent('.item').find("img").eq(0);
+        if (imgtodrag) {
+            var imgclone = imgtodrag.clone()
+                .offset({
+                top: imgtodrag.offset().top,
+                left: imgtodrag.offset().left
+            })
+                .css({
+                'opacity': '0.5',
+                    'position': 'absolute',
+                    'height': '150px',
+                    'width': '150px',
+                    'z-index': '100'
+            })
+                .appendTo($('body'))
+                .animate({
+                'top': cart.offset().top + 10,
+                    'left': cart.offset().left + 10,
+                    'width': 75,
+                    'height': 75
+            }, 1000, 'easeInOutExpo');
+            
+            imgclone.animate({
+                'width': 0,
+                    'height': 0
+            }, function () {
+                $(this).detach()
+            });
+        }
+    }); 
 
     </body>
 </html>
