@@ -43,3 +43,11 @@ function onScrollInit( items, trigger ) {
 function myFunction() {
   alert("You have successfully make your order at :" + new Date());
 }
+ /*add to cart*/
+function main() {
+$('.add-to-cart').on('click', function() {
+  
+  $(this).text("Added");
+});
+}
+$(document).ready(main);

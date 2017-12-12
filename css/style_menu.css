@@ -4,21 +4,6 @@
 	padding: 0;
 }
 
-/* U don't need to change body blackground 
-	Just cut this part out */
-
-	
-/* body {
-	background: #f8fcf5;
-	background-image: url('img/Pizza11.jpg');		
-	background-size: 34%;
-	font-family: 'Indie Flower', cursive;
-	line-height: 190%;
-	text-align: center;
-	text-transform: uppercase;		
-	min-width:490px;
-} */
-
 body {
 	width: 100%;
 	max-width: 100%;
@@ -39,8 +24,8 @@ p {
 	font-family: 'Indie Flower', cursive;
 	line-height: 190%;
 	text-align: center;
-	text-transform: capitalize;;		
-	;
+	text-transform: capitalize;		
+	
 }
 .pizza {	
 	max-height: 300px;
@@ -75,6 +60,10 @@ p {
 	max-width: 100%;
 	font-size: 200%;	
 }
+button {
+	text-transform: capitalize;
+}
+
 #button {
 	float: left;
 	position: relative;
