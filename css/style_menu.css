@@ -64,15 +64,26 @@ p {
 }
 .section1 {
 	max-width: 350px;
+	max-height: 520px;
 	margin: 2%;
 	display: block;
 	float: left;
+	
 }
 
 .center {
 	margin: 0 auto;
 	max-width: 100%;
 	font-size: 200%;	
+}
+#button {
+	float: left;
+	position: relative;
+	top: 110px;
+}
+.button {
+	position: relative;
+	top: 100px;
 }
 
 /*waypoints*/
