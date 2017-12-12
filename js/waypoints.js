@@ -31,7 +31,7 @@ function onScrollInit( items, trigger ) {
           osElement.addClass('animated').addClass(osAnimationClass);
           },{
               triggerOnce: true,
-              offset: '70%'
+              offset: '100%'
         });
   });
 }
@@ -39,3 +39,7 @@ function onScrollInit( items, trigger ) {
  onScrollInit( $('.os-animation') );
  onScrollInit( $('.staggered-animation'), $('.staggered-animation-container') );
 });
+
+function myFunction() {
+  alert("You have successfully make your order at :" + new Date());
+}
