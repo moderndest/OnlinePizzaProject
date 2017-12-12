@@ -6,11 +6,13 @@ var itemtest;
 /*Add To Cart Animation*/
 $('.add-to-cartAnimate').on('click', function(event) {
     event.preventDefault();
+    var src = $(this).attr("src");
     var name = $(this).attr("data-name");
     var price = Number($(this).attr("data-price"));
+    console.log(src)
     console.log(name);
     console.log(price);
-    onlinePizzaCart.addItemToCart(name,price,1);
+    onlinePizzaCart.addItemToCart(name,price,1,src);
     onlinePizzaCart.displayCart();
 
         // --------------- Anitmation start -------------------------

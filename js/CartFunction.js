@@ -3,13 +3,18 @@
 var onlinePizzaCart = {};
 onlinePizzaCart.cart = [];
 
-onlinePizzaCart.Item = function(name, price, count){
+onlinePizzaCart.Item = function(name, price, count,src){
     this.name = name
+    this.src = src
     this.price = price
     this.count = count
 };
 
-onlinePizzaCart.addItemToCart = function(name, price, count){
+onlinePizzaCart.addItemToCart = function(name, price, count,src){
+    if(this.cart === null)
+    {
+        this.cart = [];        
+    }
     for(var i in this.cart){
         if(this.cart[i].name === name){
             this.cart[i].count += count;  
@@ -17,7 +22,7 @@ onlinePizzaCart.addItemToCart = function(name, price, count){
             return;
         }
     }
-    var item = new onlinePizzaCart.Item(name, price, count);
+    var item = new onlinePizzaCart.Item(name, price, count, src);
     this.cart.push(item);
     this.saveCart();
 
@@ -53,77 +58,27 @@ onlinePizzaCart.displayCart = function(){
         $tableCartBody.html( "" );	
     } else {
 
-
         for( var i = 0; i < cartArray.length; ++i ) {
-
 
             console.log(cartArray[i])
             var item = cartArray[i];
+            var imagesrc = item.src;
             var product = item.name;
+            var totalcost= item.total;
             var price = this.currency + " " + item.price;
             var qty = item.count;
-                output += "<tr><td></td><td class='pname'>" + product + "</td>" + "<td><input class='item-count' type='number' data-name='"
-                +product+"' value='" + qty + "' /></td>";
-                output += "<td class='pprice'>" + price + "</td><td class='delete-item'><input  class='delete-item' data-name='"
+                output += "<tr><td><img width='80%' src='"+imagesrc+"'></td><td class='pname'>" + product + "</td><td class='pprice'>" 
+                + price + "</td><td><input class='item-count' type='number' data-name='"+product+"' value='" + qty + "' /></td>";
+                output +="<td>"+totalcost+"</td><td><input  class='delete-item' data-name='"
                 +product+"' type='image' src='image/Button/trash.png'  width='10%' /></td></tr>";
-        // console.log(html);
-        
-           
+        console.log(output);
+              
         }
 
-        
-
-        // for(var i in cartArray){
-        //     output += "<li>"
-        //     +cartArray[i].name
-        //     +" <input class='item-count'type ='number' data-name='"
-        //     +cartArray[i].name
-        //     +"' value ='"+cartArray[i].count
-        //     +"'> " +cartArray[i].count
-        //     +" x " +cartArray[i].price
-        //     +" = " +cartArray[i].total
-        //     +"<button class='plus-item' width='2%' data-name='"
-        //     +cartArray[i].name+"'>+</button>"
-        //     +"<button class='subtract-item' width='2%' data-name='"
-        //     +cartArray[i].name+"'>-</button>"
-        //     +" <input class ='delete-item' data-name='"
-        //     +cartArray[i].name+"' type='image' src='image/Button/trash.png' width='2%'>"
-        //     +"</i>";
-    
-    
-            // output += "<tr><td>"
-            // +cartArray[i].name +"</td>"
-            // +"<td>" +cartArray[i].price +"</td>"
-            // +"<td> <input class='item-count'type ='number' data-name='"
-            // +cartArray[i].name
-            // +"' value ='"+cartArray[i].count
-            // +"'> "+cartArray[i].count+"</td> " 
-            // +"</td><td>" +cartArray[i].total+"</td>"
-            // +"<td> <input class ='delete-item' data-name='"
-            // +cartArray[i].name+"' type='image' src='image/Button/trash.png' width='10%'> <td>"
-            // +"</tr>";
-            
-           
-        }
-
-        // if( cartItems.length > 0 ) {
-        
-        //     var cartTotal = this.storage.getItem( this.total );
-        //     var cartShipping = this.storage.getItem( this.shippingRates );
-        //     var subTot = this._convertString( cartTotal ) + this._convertString( cartShipping );
-        
-        //     this.$subTotal[0].innerHTML = this.currency + " " + this._convertNumber( subTot );
-        //     this.$shipping[0].innerHTML = this.currency + " " + cartShipping;
-        // } else {
-        //     this.$subTotal[0].innerHTML = this.currency + " " + 0.00;
-        //     this.$shipping[0].innerHTML = this.currency + " " + 0.00;	
-        // }
-        // var html = "<tr><td class='pname'>" + product + "</td>" + "<td class='pqty'><input type='text' value='" + qty + "' class='qty'/></td>";
-        // html += "<td class='pprice'>" + price + "</td><td class='pdelete'><a href='' data-product='" + product + "'>&times;</a></td></tr>";
+    }
     
 
     $('tbody').html( $tableCartBody.html() + output );
-    // $("#show-cart").html(output);
     $('#total-cart').html(this.totalCart());
     $('#totalItems').html(this.countCart());
 }
@@ -208,6 +163,13 @@ onlinePizzaCart.loadCart = function (){
     this.cart = JSON.parse(sessionStorage.getItem("shoppingCart"));
 }
 
+
+
+// onlinePizzaCart.init = function(){
+    
+//     onlinePizzaCart.loadCart();
+    
+// }
 
 
 onlinePizzaCart.loadCart();

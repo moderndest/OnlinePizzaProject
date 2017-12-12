@@ -28,7 +28,7 @@
                         <form class="add-to-cart" action="" >
                             
                             <!-- <button class="add-to-cart"  type="submit" formaction="SignUp/SignUp.php" formmethod="POST">Add to cart</button> -->
-                            <button class="add-to-cartAnimate" data-name="Small Set" data-price="9.99" type="button">Add to cart</button>
+                            <button class="add-to-cartAnimate" src ="image/Pic/smallset.png" data-name="Small Set" data-price="9.99" type="button">Add to cart</button>
                             <div class ="smallsetPic">
                                 <img id ="itemselect1" src="image/Pic/smallset.png" alt="smalleset">
                             </div>
@@ -48,7 +48,7 @@
                 <section class="one-third item">
                     <div class="set-wrapper">
                         <form class="add-to-cart" action="" >
-                            <button class="add-to-cartAnimate" data-name="Party Set" data-price="12.99" type="button">Add to cart</button>
+                            <button class="add-to-cartAnimate" src ="image/Pic/partyset.png" data-name="Party Set" data-price="12.99" type="button">Add to cart</button>
                     
                             <div class="Partypic-wrapper">   
                                 <img id ="itemselect2" src="image/Pic/partyset.png" alt="partyset">
@@ -66,9 +66,9 @@
                 <section class="one-third item">
                     <div class="set-wrapper">
                     <form class="add-to-cart" action="" >
-                        <button class="add-to-cartAnimate" data-name="Family Set" data-price="14.99" type="button">Add to cart</button>
+                        <button class="add-to-cartAnimate" data-name="Family Set" data-price="14.99" src = "image/Pic/FamSet.png" type="button">Add to cart</button>
                             <div class="fampic-wrapper ">
-                                <img id ="itemselect3" src="image/Pic/FamSet.png" alt="famset">
+                                <img id ="itemselect3" src ="image/Pic/FamSet.png" alt="famset">
                                 <div >
                             </div>
                             <div class="famlabel-wrapper">

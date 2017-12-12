@@ -94,8 +94,13 @@
 #pricing #shipping {
 	margin: 1em 0;
 }
+tr{
+	color: white;
+}
 
-
-tr, #sub-total strong, #sub-total span{
+ #sub-total strong{
+	float: right;
+	padding-right: 20%;
+	position: relative;
 	color: white;
 }

@@ -46,18 +46,20 @@
 				<tr>
                     <th scope="col">Item</th>
                     <th scope="col"></th>
-                    <th scope="col">Qty</th>
                     <th scope="col">Price</th>
+                    <th scope="col">Qty</th>
+                    <th scope="col">total</th>
                     <th scope="col">Delete</th>
                 </tr>
               </thead>
               
-			  <tbody>
+			  <tbody id="tbody">
 			        <tr></tr>
 			  </tbody>
-			</table>
+            </table>
+            <div class="clearfix"></div>
 			<p id="sub-total">
-				<strong>Sub Total : $</strong> <span id="total-cart"></span>
+				<strong>Sub Total : $ <span id="total-cart"></span></strong> 
 			</p>
 			
 		</form>
