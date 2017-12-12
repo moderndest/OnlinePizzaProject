@@ -48,8 +48,7 @@ p {
 	max-width: 300px;
 	min-width: 300px;
 	
-	border-color: #f2f2f2;
-	border-style: solid;
+	
 	border-width: 5px;	
 	position: relative;
 } 
@@ -86,15 +85,16 @@ p {
 	top: 100px;
 }
 .checkout {
-   position: fixed;
-   right: 0;
-   bottom: 50px;
-  height: 50px;
-  margin: 0 auto;
-  background: #E0E0E0;
-  text-align:center;
-  z-index: 1;
-}
+	position: static;
+    right: 0;
+    bottom: 0px;
+	height: 50px;
+	width: 30%; 
+    margin: 0 auto;
+    background: rgb(255, 0, 0);
+    text-align:center;
+    z-index: 1;
+} 
 
 /*waypoints*/
 .os-animation{
