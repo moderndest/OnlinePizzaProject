@@ -1,15 +1,8 @@
 $(document).ready(function() {
-	$('.nav2 ul').hide();
 	$('body').hide();
 	$('body').fadeIn(1000);				
 		});
 			
-$(document).ready(function() {									
-	$('.nav1 a').on('click', function() {
-	$('.nav2 ul').slideToggle(200);
-	})
-});		
-
  /*waypoints*/
 
 $(function(){
@@ -31,7 +24,7 @@ function onScrollInit( items, trigger ) {
           osElement.addClass('animated').addClass(osAnimationClass);
           },{
               triggerOnce: true,
-              offset: '70%'
+              offset: '100%'
         });
   });
 }
@@ -39,3 +32,17 @@ function onScrollInit( items, trigger ) {
  onScrollInit( $('.os-animation') );
  onScrollInit( $('.staggered-animation'), $('.staggered-animation-container') );
 });
+
+function myFunction() {
+  alert("You have successfully make your order at :" + new Date());
+}
+
+ /*add to cart*/
+
+function main() {
+$('.add-to-cart').on('click', function() {
+  
+  $(this).text("Added");
+});
+}
+$(document).ready(main);
