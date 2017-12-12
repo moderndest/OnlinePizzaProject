@@ -48,8 +48,7 @@ p {
 	max-width: 300px;
 	min-width: 300px;
 	
-	border-color: #f2f2f2;
-	border-style: solid;
+	
 	border-width: 5px;	
 	position: relative;
 } 
@@ -64,9 +63,11 @@ p {
 }
 .section1 {
 	max-width: 350px;
+	max-height: 520px;
 	margin: 2%;
 	display: block;
 	float: left;
+	
 }
 
 .center {
@@ -74,6 +75,26 @@ p {
 	max-width: 100%;
 	font-size: 200%;	
 }
+#button {
+	float: left;
+	position: relative;
+	top: 110px;
+}
+.button {
+	position: relative;
+	top: 100px;
+}
+.checkout {
+	position: static;
+    right: 0;
+    bottom: 0px;
+	height: 50px;
+	width: 30%; 
+    margin: 0 auto;
+    background: rgb(255, 0, 0);
+    text-align:center;
+    z-index: 1;
+} 
 
 /*waypoints*/
 .os-animation{

@@ -8,7 +8,16 @@ Date:
 */
 
 /* Full-width input fields */
+.Login{
+    position: absolute;
+    display: inline;
+    top:4%;
+    right: 10%;
 
+}
+.Login:hover{
+    opacity: 0.8;
+}
 .cartButton{
     position: absolute;
     Top:4%;
@@ -47,7 +56,7 @@ button.loginButton{
 
 /* Extra styles for the LoginIcon button */
 button.LoginButtonH {
-    background:transparent;
+    background: transparent;
     right:10%;
     Top:0;
     position: absolute;

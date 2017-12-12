@@ -10,6 +10,15 @@
         <title>Where is My Pizza</title>
 
         <style>
+            #map {
+              height: 300px;
+              width: 80%;
+              max-height: 80%;
+
+              margin-left: 10%;
+              margin-right: 10%;
+
+             }
              #ordertext {
                font-size: 100%;
                margin: 2%;
@@ -18,16 +27,6 @@
                text-align: center;
                margin-left: 10%;
               }
-              .container2 {
-              height: 100%;
-              width: 80%;
-              min-width: 100px;
-              
-              margin-left: 10%;
-              margin-right: 10%;
-
-             }
-
         </style>
 
         <!--animate-->
@@ -51,14 +50,44 @@
             <div id="header"></div>
             <!--Remaining section-->
             <!-- Continue Coding here -->
-            <label><b><font color="f3a816"># ORDER NO.</font></b></label>            
-            <div class="container2">
-                <input type="text" placeholder="Enter Order Number" name="uname" required style="width:auto;">                    
-                 <button class="loginButton" type="submit" onclick="window.location='WhereIsMyPizzaMapView.html'" style="width:auto;">Enter</button>
-
-                <div class="clearfix"></div>
-            </div>
+            <div id="ordertext"> Order NO.##123456 </br></div>
             
-    
+            <div id="map" align="center" valign="center"></div>
+            <script>
+              function initMap() {
+                var position = {lat: 42.339244, lng: -71.090835};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                  zoom: 15,
+                  center: position
+                });  
+
+                var contentString = 'We Will be there in 10 minutes.';
+                var infowindow = new google.maps.InfoWindow({
+                  content: contentString
+                  
+                  });
+                var marker = new google.maps.Marker({
+                  position: position,
+                  map: map
+                });
+                marker.addListener('click', function() {
+                  infowindow.open(map, marker);
+                });
+                infowindow.open(map,marker);
+              }
+            </script>
+
+            <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7L9U76qc4yzpJCBz1hSplChJxB7zkRlI&callback=initMap">
+            </script>
+            </div>
+
+            <div id="ordertext"> Driver Phone Number: 123-456-789 </br></div>
+            <div id="inner-wrapper">
+              <section class="one-third"></section>     
+              <section class="one-third"></section>
+            </div>  
+            <div class="clearfix"></div>
+
     </body>
 </html>
