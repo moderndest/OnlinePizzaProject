@@ -65,7 +65,19 @@
             </table>
             <div class="clearfix"></div>
 			<p id="sub-total">
-				<strong>Sub Total : $ <span id="total-cart"></span></strong> 
+				<strong>Sub Total : $<span id="total-cart"></span></strong> 
+            </p>
+            <div class="clearfix"></div>
+            <p id="sub-total">
+				<strong>Shipping fee : $<span>2</span></strong> 
+            </p>
+            <div class="clearfix"></div>
+            <p id="sub-total">
+				<strong>Tax : $<span>0</span></strong> 
+            </p>
+            <div class="clearfix"></div>
+            <p id="sub-total">
+				<strong>grandTotal : $<span id="grandTotal"></span></strong> 
 			</p>
 			
 		</form>

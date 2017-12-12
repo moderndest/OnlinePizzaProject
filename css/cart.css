@@ -109,11 +109,11 @@ tr{
 
  #sub-total strong{
 	float: right;
-	padding-right: 5%;
+	padding-right: 4%;
 	position: relative;
 	font-family: cursive;
 	color: #f3a816;
-	font-size: 200%;
+	font-size: 150%;
 }
 .item-count
 {

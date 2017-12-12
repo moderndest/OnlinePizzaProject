@@ -102,6 +102,9 @@ $("#tbody").on("change",".item-count",function(event){
 });
 
 
+
+
+
 onlinePizzaCart.displayCart();
 
 

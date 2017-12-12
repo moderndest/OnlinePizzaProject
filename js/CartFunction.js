@@ -66,7 +66,7 @@ onlinePizzaCart.displayCart = function(){
 
         for( var i = 0; i < cartArray.length; ++i ) {
 
-            console.log(cartArray[i])
+            // console.log(cartArray[i])
             var item = cartArray[i];
             var imagesrc = item.src;
             var product = item.name;
@@ -77,16 +77,18 @@ onlinePizzaCart.displayCart = function(){
                 + price + "</td><td><input class='item-count' type='number' data-name='"+product+"' value='" + qty + "' /></td>";
                 output +="<td>"+totalcost+"</td><td><input  class='delete-item' data-name='"
                 +product+"' type='image' src='image/Button/trash.png'  width='25%' /></td></tr>";
-        console.log(output);
+        // console.log(output);
               
         }
 
     }
     
 
+
     $('tbody').html( $tableCartBody.html() + output );
     $('#total-cart').html(this.totalCart());
     $('#totalItems').html(this.countCart());
+    $('#grandTotal').html(this.granTotal());
 }
 
 // Removeds one item
@@ -142,6 +144,21 @@ onlinePizzaCart.totalCart = function (){
 
 }
 
+onlinePizzaCart.granTotal = function (){
+    var shipping = 2;
+    var grand = 0;
+    var tax = 0;
+     var totalCost = 0;
+     for (var i in this.cart){
+         totalCost += this.cart[i].price * this.cart[i].count;
+     }
+     grand = totalCost+ shipping + tax;
+    console.log(grand);
+
+    return grand.toFixed(2);
+
+}
+
 onlinePizzaCart.listCart = function (){
     var cartCopy=[];
     for (var i in this.cart){
@@ -170,12 +187,30 @@ onlinePizzaCart.loadCart = function (){
 }
 
 
-
-// onlinePizzaCart.init = function(){
-    
-//     onlinePizzaCart.loadCart();
-    
-// }
-
-
 onlinePizzaCart.loadCart();
+
+
+
+//  SHIPPING
+
+onlinePizzaCart.addInfo = function(){
+    
+    var Fname = document.getElementById("input_id").value
+    var Lname = document.getElementById("input_id").value
+    var email = document.getElementById("input_id").value
+    if(this.cart === null)
+    {
+        this.cart = [];        
+    }
+    for(var i in this.cart){
+        if(this.cart[i].name === name){
+            this.cart[i].count += count;  
+            this.saveCart(); 
+            return;
+        }
+    }
+    var item = new onlinePizzaCart.Item(name, price, count, src);
+    this.cart.push(item);
+    this.saveCart();
+
+}
