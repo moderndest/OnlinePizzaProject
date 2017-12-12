@@ -1,3 +1,9 @@
+// Online Pizza 
+// Filename: LoginPopup.js
+
+// Author: Chatsuda Rattarasan   
+// Date:  DEC 11 2017
+
 // Get the modal
 var modal = document.getElementById('id01');
 var modal2 = document.getElementById('id02');

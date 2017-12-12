@@ -1,3 +1,9 @@
+/* Online Pizza 
+Filename: cart.php
+
+Author: Chatsuda Rattarasan   
+Date:  DEC 11 2017  */
+
 .btn, a.btn {
 	display: inline-block;
 	background: #f3a816;
@@ -11,7 +17,8 @@
 }
 
 #shopping-cart {
-	margin: 1.5em 0;
+	margin: 1.5em 10%;
+	width:80%;
 }
 .shopping-cart {
 	border: 1px solid #ddd;
@@ -36,9 +43,7 @@
 	border: 1px solid #ddd;
 }
 
-/* .shopping-cart tr:nth-child(even) {
-	 background: #fafafa; 
-} */
+
 
 .shopping-cart td.pdelete {
 	text-align: center;
@@ -95,12 +100,26 @@
 	margin: 1em 0;
 }
 tr{
-	color: white;
+	font-size: 100%;
+	/* font-family: cursive; */
+	color: #f3a816;
+	width:70%;
+	margin: 0, auto;
 }
 
  #sub-total strong{
 	float: right;
-	padding-right: 20%;
+	padding-right: 5%;
 	position: relative;
-	color: white;
+	font-family: cursive;
+	color: #f3a816;
+	font-size: 200%;
+}
+.item-count
+{
+	width: 50%;
+	text-align: center;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	font-size: 100%;
 }

@@ -1,0 +1,96 @@
+.clearfix{
+	clear: both;
+	padding: 2%;
+}
+.clearfix2{
+	clear: both;
+	padding: 1px;;
+}
+
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: black;
+    display: none;
+    padding: 100px 20px;
+    height: 110%;
+}
+
+/* .btn, a.btn {
+	display: inline-block;
+	background: #f3a816;
+	color: #fff;
+	font: 1em 'Ubuntu Condensed', sans-serif;
+	padding: 0.3em 1em;
+	text-align: center;
+	border-radius: 4px;
+    border: 1px solid #f3a816;
+    text-decoration: none;
+    float: right;
+    
+} */
+
+#defaultOpen:active{
+    background:#f3a816;
+}
+
+.btnC
+{
+    background:#f3a816;
+    margin-right: 2%;
+    width: 20%;
+    float: right;
+    position: relative;
+}
+    
+
+#Shipping {background-color: white;}
+#Billing {background-color: white;}
+#Payment {background-color: white;}
+#OrderR {background-color: white;}
+
+
+.block{
+    width: 29%;
+	float: left;
+    margin: 1%;
+    
+}
+
+.left{
+    float: left;
+    position: relative;
+}
+#AddLine1, #AddLine2{
+    width: 250%;
+}
+
+/* #backbtn{
+    position: relative;
+    margin-top: -70px;
+} */

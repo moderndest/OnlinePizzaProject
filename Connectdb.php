@@ -1,3 +1,10 @@
+<!-- 
+    Online Pizza 
+    Filename: Connectdb.php
+
+    Author: Chatsuda Rattarasan   
+	Date:  DEC 11 2017 -->
+	
 <?php 
  	$dbhost = "localhost";	//database server address
 	$dbuser = "OnlinePizza";		//username

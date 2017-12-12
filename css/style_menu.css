@@ -1,11 +1,12 @@
 
 
 
-/* body {
-	width: 100%;
-	max-width: 100%;
+
+
+#inner-wrapper{
+	max-width: 100px;
 	margin: 0 auto;
-} */
+}
 container {
 	position: relative;
 	top: -80px;
@@ -17,7 +18,7 @@ container {
 }
 
 p {
-	color: white;
+	color: #f3a816;
 	line-height: 190%;
 	text-align: center;
 	text-transform: capitalize;;		
@@ -29,9 +30,7 @@ p {
 	max-width: 300px;
 	min-width: 300px;
 	
-	border-color: #f2f2f2;
-	border-style: solid;
-	border-width: 5px;	
+	
 	position: relative;
 } 
 .label {
@@ -41,6 +40,7 @@ p {
 }
 p {
 	position: relative;
+	font-family: cursive;
 	top: -110px;
 }
 .section1 {
@@ -62,6 +62,14 @@ p {
 	max-width: 100%;
 	font-size: 200%;	
 }
+
+
+/* ADD TO CART*/
+.add-to-cartAnimate {
+    background:green;
+	font-size: 80%;
+}
+
 
 /*waypoints*/
 .os-animation{

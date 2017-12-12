@@ -17,10 +17,19 @@
             <!-- Continue Coding here -->
 
 
-        <<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
         <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
         <script  src="js/CartFunction.js"></script> 
         <script >onlinePizzaCart.displayCarttotal();</script>
+
+        <div class="clearfix"></div>
+        <form method="POST">
+        <div class="myorderContent">
+            <img src"">
+            <input class"orderInput" type="text" required>
+            <button class"orderbutton" type="submit" formaction="SignUp/SignUp.php" formmethod="POST"> Enter </button>
+        </div>
+        </form>
         
     </body>
 </html>

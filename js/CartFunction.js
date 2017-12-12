@@ -1,5 +1,11 @@
 // /////////////////// SHOPPING CART FUNCTION ////////////////////
 
+// Online Pizza 
+// Filename: CartFunction.js
+
+// Author: Chatsuda Rattarasan   
+// Date:  DEC 11 2017
+
 var onlinePizzaCart = {};
 onlinePizzaCart.cart = [];
 
@@ -70,7 +76,7 @@ onlinePizzaCart.displayCart = function(){
                 output += "<tr><td><img width='80%' src='"+imagesrc+"'></td><td class='pname'>" + product + "</td><td class='pprice'>" 
                 + price + "</td><td><input class='item-count' type='number' data-name='"+product+"' value='" + qty + "' /></td>";
                 output +="<td>"+totalcost+"</td><td><input  class='delete-item' data-name='"
-                +product+"' type='image' src='image/Button/trash.png'  width='10%' /></td></tr>";
+                +product+"' type='image' src='image/Button/trash.png'  width='25%' /></td></tr>";
         console.log(output);
               
         }

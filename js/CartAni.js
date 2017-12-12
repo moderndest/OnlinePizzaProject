@@ -1,3 +1,8 @@
+// Online Pizza 
+// Filename: CartAni.js
+
+// Author: Chatsuda Rattarasan   
+// Date:  DEC 11 2017
 
 var totalitemInCart = 0;
 var Item = [];
@@ -97,19 +102,6 @@ $("#tbody").on("change",".item-count",function(event){
 });
 
 
-// onlinePizzaCart.loadCart();
 onlinePizzaCart.displayCart();
-// console.log("Shopping Cart:cart");
-// console.log(onlinePizzaCart.cart);
-// //console.log("Global Cart:cart");
-// // console.log(cart);
 
-
-// var array = onlinePizzaCart.listCart();
-// console.log("----------------------");
-// console.log(array);
-
-// var someText =">>>";
-// someText +="AAAA"
-// console.log(someText);
 

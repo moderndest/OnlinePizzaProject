@@ -1,7 +1,4 @@
-#inner-wrapper{
-	max-width: 1500px;
-	margin: 0 auto;
-}
+
 
 #Comboheader{
     /* margin-top: -5%; */
@@ -10,101 +7,40 @@
 
 .one-third img{
     padding-bottom: 10%;
-    /* padding-left: 10%;
-    padding-right: 10%; */
+
 } 
-.one-third{
-    padding-bottom: 10%;
-    
-
-}
 
 
-.set-wrapper{
-    width: 80%;
+.combo {	
+	max-height: 280px;
+	min-height: 280px;
+	max-width: 280px;
+	min-width: 280px;
+	
+	
+	position: relative;
+} 
 
-}
-
-/* Small set  style configuration*/
-.pic-wrapper{
-    width:100%;   
-    
-}
-.label-wrapper {
-    width:95%; 
-    position: relative;
-    margin-top: -40%;
-    z-index: 0;
-}
-.text-wrapper {
-    position: relative;
-    margin-top: -35%;
-    margin-left: 9%;
-    transform: translate(-9%, -9%);
-    font-size: 100%;
+p {
+	position: relative;
+	font-family: cursive;
+    top: -200px;
+    font-size: 150%;
     color: #f3a816;
-
-    font-family: cursive;
-
 }
+
+.label {
+	position: relative;
+	top: -100px;
+	z-index: -40;
+}
+
+
 #add-to-cart{
     z-index: 4;
     position: absolute;
 }
 
-/* Party set  style configuration*/
-
-.Partypic-wrapper{
-    
-    width:100%;
-    margin-top: 28;
-    padding: 10%;
-    /* height: 1px;    */
-    
-}
-.Partylabel-wrapper {
-
-    width:95%; 
-    position: relative;
-    margin-top: -5%;
-    z-index: 0;
-
-}
-.Partytext-wrapper {
-    position: relative;
-    margin-top: -35%;
-    margin-left: 9%;
-    transform: translate(-9%, -9%);
-    font-size: 100%;
-    
-    text-rendering: optimizeLegibility;
-    color: #f3a816;
-    font-family: cursive;
-
-
-}
-
-/* famaily set  style configuration*/
-.fampic-wrapper{
-    width:100%;
-  
-    
-}
-.famlabel-wrapper {
-    width:95%; 
-    position: relative;
-    margin-top: -5%;
-    z-index: 0;
-}
-.famtext-wrapper {
-    position: relative;
-    margin-top: -35%;
-    margin-left: 9%;
-    transform: translate(-9%, -9%);
-    font-size: 100%;
-    color: #f3a816;
-    font-family: cursive;
-}
 
 
 /* ADD TO CART*/

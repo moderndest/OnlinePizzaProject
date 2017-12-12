@@ -1,4 +1,10 @@
 <!DOCTYPE html>
+<!-- 
+    Online Pizza 
+    Filename: cart.php
+
+    Author: Chatsuda Rattarasan   
+    Date:  DEC 11 2017 -->
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -22,11 +28,10 @@
     
         </header>
             
-            <!--Remaining section-->
-            <!-- Continue Coding here -->
     
 	<div id="content">
-		<h1>Your Shopping Cart</h1>
+        <h1>Your Shopping Cart</h1>
+        <div class="clearfix"></div>
 		<form id="shopping-cart" action="" method="post">
             <ul id="shopping-cart-actions">
 				<li>
@@ -35,12 +40,13 @@
 				</li>
 				<li>
                 <!-- href="javascript:history.go(-1)" -->
-					<a href="Combo.php" class="btn">Continue Shopping</a>
+					<a href="Menu.php" class="btn">Continue Shopping</a>
 				</li>
 				<li>
 					<a href="CheckOut.php" class="btn">Go To Checkout</a>
 				</li>
-			</ul>
+            </ul>
+            <div class="clearfix"></div>
 			<table class="shopping-cart">
 			  <thead>
 				<tr>
@@ -64,7 +70,10 @@
 			
 		</form>
 	</div>
-    
+
+    <div class="clearfix"></div>
+    <div class="clearfix"></div>
+    <div class="clearfix"></div>
 
         <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
         <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>

@@ -8,41 +8,6 @@
         -->
 
 <!--  HEADER SECTION --> 
-<?php
-// * ----------- Choose Product -------------------------*/
-
-
-
-// if($ProductCode!= NULL)
-// {
-// 	include 'Connectdb.php';
-//        $sql="SELECT * FROM product WHERE ProductCode = '".$ProductCode. "' ";
-// 	   $result=mysql_query($sql);
-// 	   while($r=mysql_fetch_assoc($result))
-// 	   {
-// 		   $ProductCode=$r['ProductCode'];
-// 		   $ProductName=$r['ProductName'];
-// 		   $UnitPrice=$r['UnitPrice'];
-// 	   }
-// 	   mysql_close($conn);
-// }
-// if($EditProductCode!= NULL)
-// {
-// 	include 'Connectdb.php';
-//        $sql="SELECT * FROM product WHERE ProductCode = '".$EditProductCode. "' ";
-// 	   $result=mysql_query($sql);
-// 	   while($r=mysql_fetch_assoc($result))
-// 	   {
-
-// 		   $EditProductCode=$r['ProductCode'];
-// 		   $EditProductName=$r['ProductName'];
-// 		   $EditUnitPrice=$r['UnitPrice'];
-// 	   }
-// 	   mysql_close($conn);
-// }
-?>
-  	
-
 
 <button  class ="LoginButtonH" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
     <img src="image/Button/user_Icon.png">

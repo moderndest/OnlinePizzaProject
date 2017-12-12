@@ -1,0 +1,219 @@
+
+/* Online Pizza 
+Filename: style.css
+
+Author: Chatsuda Rattarasan   
+Date:     
+
+*/
+
+
+* {
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+
+
+
+
+body{
+    background: black; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(black, rgb(88, 87, 87)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(black, rgb(88, 87, 87)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(black, rgb(88, 87, 87)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(black, rgb(88, 87, 87)); /* Standard syntax */
+	color: #555;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	line-height: 190%;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+img{
+	max-width: 100%;
+}
+
+/*--- Start Nav ---*/
+nav{
+    
+	padding: 35px 20px 0 0;
+}
+#menu-icon{
+	background: url(/image/icon/icon.png)center;
+	width: 40px;
+	height: 34px;
+	display: hidden;
+}
+
+ul{
+	list-style: none;
+}
+nav ul li {
+	font-family: cursive;
+	display: inline-block;
+	padding: 10px;
+	/* float: left; */
+	font-size: 110%;
+}
+nav ul li a{
+	color: #f3a816;
+    text-decoration: none;
+    text-shadow:
+    -1px -1px 0px #5b2904,
+    1px -1px 0px #5b2904,
+    -1px 1px 0px #5b2904,
+    1px 1px 0px #5b2904;
+	font-weight: 700;
+}
+a:hover, .current {
+    color: white;
+    text-shadow: none;
+}
+
+
+/*-- Start Inner Wrapper ---*/
+#inner-wrapper{
+	max-width: 1500px;
+	margin: 0 auto;
+}
+.clearfix{
+	clear: both;
+	padding: 3%;
+}
+
+.one-third{
+	width: 29%;
+	float: left;
+	margin: 2%;
+}
+
+.one-third img{
+	padding-bottom: 4%;
+} 
+/*--- Media Queries! ---*/
+@media screen and  (max-width:768px){
+	header{
+		position: absolute;
+    }
+    
+    #header-nav{
+        top: 20px;
+
+    }
+	#menu-icon{
+        /* float:right; */
+		display: inline-block;
+	}
+	nav:hover ul{
+		display: block;
+	}
+	nav ul, nav:active ul{
+		display: none;
+		z-index: 1000;
+		position: absolute;
+        background: rgb(27, 26, 26);
+        opacity: .9;
+		width: 30%;
+		padding: 20px;
+		right: 20px;
+		top:60px;
+		border: 1px solid #fff;
+		border-radius: 4px 0 4px 4px;
+	}
+	nav li{
+		text-align: center;
+		width: 100%;
+	}
+	.one-third {
+		width: 100%;
+		margin:0;
+		padding-bottom: 4%;
+	}
+
+	
+}
+
+@media screen and (max-width: 478px) {
+	h3{
+		font-size: 150%;
+	}
+	p{
+		font-size: 100%;
+		margin: 2%;
+	}
+	h4 {
+		font-size: 115%;
+	}
+}
+
+/*-- Start AboutUs ---*/
+.ourfamily{
+	max-width: 500px;
+	margin-top: -70px;
+	float: left;
+}
+.inner-icon{
+		display: inline-block;
+		float:left;
+		margin-left: 100px;
+		max-width: 500px;
+		margin-top: -80px;
+		float: left;
+	}
+
+.ourfamily p{
+	font-family: cursive;
+	color: #f3a816;
+    text-decoration: none;
+    text-shadow:
+    -1px -1px 0px #5b2904,
+    1px -1px 0px #5b2904,
+    -1px 1px 0px #5b2904,
+    1px 1px 0px #5b2904;
+	font-weight: 700;
+}
+
+
+.inner-text h4{
+	font-family: cursive;
+	color: #f3a816;
+    text-decoration: none;
+    text-shadow:
+    -1px -1px 0px #5b2904,
+    1px -1px 0px #5b2904,
+    -1px 1px 0px #5b2904,
+    1px 1px 0px #5b2904;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: left;
+	font-size: 15px;
+}
+.inner-text{
+	max-width: 400px;
+	float: left;
+	position: relative;
+	color: white;
+	margin-left: 60px;
+	margin-top: -70px;
+	text-transform: capitalize;
+	font-family:  monospace;
+	font-size: 18px;
+	text-align: left;
+}
+
+.social{
+	font-family: cursive;
+	color: #f3a816;
+    text-decoration: none;
+    text-shadow:
+    -1px -1px 0px #5b2904,
+    1px -1px 0px #5b2904,
+    -1px 1px 0px #5b2904,
+    1px 1px 0px #5b2904;
+	font-weight: 700;
+	margin-top: -70px;
+	float: right;
+	margin-right: 130px;
+}
