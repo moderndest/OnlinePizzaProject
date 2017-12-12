@@ -36,7 +36,7 @@
         <!-- ///////////// TAB START HERE///////////////// -->
         <div id="inner-wrapper">
             <div class="clearfix"></div> 
-            <button class="tablink"  onclick="openPage1('Shipping','defaultOpen', 'orange')"id="defaultOpen">Shipping Address</button>
+            <button class="tablink"  onclick="openPage('Shipping','defaultOpen', 'orange')"id="defaultOpen">Shipping Address</button>
             <button class="tablink" id="Bill" onclick="openPage('Billing','Bill', 'orange')">Billing Address</button>
             <button class="tablink" id="Pay"onclick="openPage('Payment', 'Pay', 'orange')">Payment</button>
             <button class="tablink" id="Re" onclick="openPage('OrderR', 'Re', 'orange')">Order Review</button>
@@ -189,7 +189,7 @@
                     </div>
                     
                 <div class="clearfix2"></div>
-                <button  class="btnC " onclick="openPage('Billing','Bill', 'orange') ">Next</button>
+                <button  class="btnC btnS">Next</button>
 
             </div>
 
@@ -280,7 +280,7 @@
                 <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
                             
 
-                <button  class="btnC" onclick="openPage('OrderR','Re','orange')" >Next</button>
+                <button  class="btnC btnB" onclick="openPage('OrderR','Re','orange')" >Next</button>
             </div>
 
 
