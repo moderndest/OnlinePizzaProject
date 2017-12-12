@@ -168,17 +168,16 @@ a:hover, .current {
 
 /*-- Start AboutUs ---*/
 .ourfamily{
-	max-width: 500px;
+	width: 30%;
 	margin-top: -70px;
-	float: left;
+	position: absolute;
 }
 .inner-icon{
-		display: inline-block;
-		float:left;
-		margin-left: 100px;
-		max-width: 500px;
-		margin-top: -80px;
-		float: left;
+	width: 50%;
+	margin-top: -80px;
+	display: inline-block;
+	margin-left: 100px;
+	position: absolute;
 	}
 
 .ourfamily p{
@@ -205,23 +204,28 @@ a:hover, .current {
     1px 1px 0px #5b2904;
 	font-weight: 700;
 	text-transform: uppercase;
-	text-align: left;
+	text-align: center;
 	font-size: 15px;
 }
 .inner-text{
-	max-width: 400px;
-	float: left;
+	width: 100%;
+	float: center;
 	position: relative;
 	color: white;
-	margin-left: 60px;
+	margin: auto;
 	margin-top: -70px;
 	text-transform: capitalize;
 	font-family:  monospace;
 	font-size: 18px;
 	text-align: left;
+	line-height: 200%;
 }
 
-.social{
+.social {
+	width:165%;
+	float: left;
+	position: relative;
+	margin-top: -22%;
 	font-family: cursive;
 	color: #f3a816;
     text-decoration: none;
@@ -231,7 +235,26 @@ a:hover, .current {
     -1px 1px 0px #5b2904,
     1px 1px 0px #5b2904;
 	font-weight: 700;
-	margin-top: -70px;
-	float: right;
-	margin-right: 130px;
 }
+
+
+/*------ media query--------*/
+@media all and (max-width: 768px) {
+    ourfamily {
+        width: 100%; /* Earlier 70%*/
+    }
+
+    .inner-text {
+        width: 100%;/* Earlier 95%*/
+	}
+	social {
+        width: 100%;/* Earlier 95%*/
+	}
+}
+    .inner-icon{
+	/* float:right; */
+	display: inline-block;
+}
+	.sr-icon{
+		width:100%;
+	}
