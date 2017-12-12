@@ -1,7 +1,7 @@
 var onlinePizza = {};
 var shipping =[];
 var billing =[];
-
+var start ="defaultOpen";
 
 
 onlinePizza.shippinginfo = function(Fname,Lname,email,addressL1,addressL2,country,city,zip,state,tel){
@@ -21,6 +21,7 @@ onlinePizza.shippinginfo = function(Fname,Lname,email,addressL1,addressL2,countr
 
 function openPage(pageName,elmnt,color){
 
+        console.log(pageName);
         var i, tabcontent, tablinks;
         tabcontent = document.getElementsByClassName("tabcontent");
         for (i = 0; i < tabcontent.length; i++) {
@@ -42,7 +43,7 @@ function openPage(pageName,elmnt,color){
 }
 
 //Add Shipping info 
-$(".btnS").click (function(){
+$(".btnS").click (function(event){
     
     var Fname = document.getElementsByClassName("fname")[0].value;
     var Lname = document.getElementsByClassName("lname")[0].value;
@@ -65,22 +66,28 @@ $(".btnS").click (function(){
     // console.log(zip);
     // console.log(state);
     // console.log(tel);
-    if(!Fname || !Lname || !email || !addressL1 || !addressL2 || !country || !city || !zip || !state || !tel)
-    {
-        return;
-    }
-    else{
+
+        // if(!Fname || !Lname || !email || !addressL1 || !addressL2 || !country || !city || !zip || !state || !tel)
+        // {
+        //     retuen;
+        // }
+        // else{
         
 
         var item = new onlinePizza.shippinginfo(Fname,Lname,email,addressL1,addressL2,country,city,zip,state,tel);
         shipping.push(item);
         onlinePizza.saveShipInfo();
-        var ele= "Bill";
-        openPage('Billing',ele,'orange');
-    }
+        start="Bill";
+
+       //openPage('Bill', start, 'orange');
+        // document.getElementById(start).click();
+        
+        //var ele= "Bill";
+       
+        //}
 
     
-});
+ });
 
 
 //save Shipinfo to session storage
@@ -94,36 +101,90 @@ onlinePizza.savebillingInfo =function() {
 
 
 //Add Shipping info to Session Storage
-$(".btnB").click (function(){
-    
+$(".btnB").click (function(event){
+    console.log("saveBilling");
    
+    var Fname = document.getElementsByClassName("fname")[0].value;
+    var Lname = document.getElementsByClassName("lname")[0].value;
+    var email = document.getElementsByClassName("email")[0].value;
+    var addressL1 = document.getElementsByClassName("AddLine1")[0].value;
+    var addressL2 = document.getElementsByClassName("AddLine2")[0].value;
+    var country = document.getElementsByClassName("country")[0].value;
+    var city = document.getElementsByClassName("city")[0].value;
+    var zip = document.getElementsByClassName("zip")[0].value;
+    var state = document.getElementsByClassName("state")[0].value;
+    var tel = document.getElementsByClassName("tel")[0].value;
 
-
-    if(!Fname || !Lname || !email || !addressL1 || !addressL2 || !country || !city || !zip || !state || !tel)
-    {
-        return;
-    }
-    else{
+    // if(!Fname || !Lname || !email || !addressL1 || !addressL2 || !country || !city || !zip || !state || !tel)
+    // {
+    //      return;
+    // }
+    // else{
         
 
-        var item = new onlinePizzaCart.shippinginfo(Fname,Lname,email,addressL1,addressL2,country,city,zip,state,tel);
+        var item = new onlinePizza.shippinginfo(Fname,Lname,email,addressL1,addressL2,country,city,zip,state,tel);
         billing.push(item);
-        onlinePizzaCart.saveShipInfo();
-        var ele= "Pay'";        
-        openPage('Payment', ele, 'orange');
+        onlinePizza.savebillingInfo();
+        var ele= "Pay'";    
+        start="Pay";
+    // } 
+        openPage('Payment', start, 'orange');
 
-    }
+   // }
 
     
 });
 
-var blockedWorker = document.getElementById("defaultOpen").click();
-// document.getElementById("defaultOpen").click();
+
+
+$(".btnR").click (function(event){
+    console.log("savePayment");
+   
+    // var Fname = document.getElementsByClassName("fname")[0].value;
+    // var Lname = document.getElementsByClassName("lname")[0].value;
+    // var email = document.getElementsByClassName("email")[0].value;
+    // var addressL1 = document.getElementsByClassName("AddLine1")[0].value;
+    // var addressL2 = document.getElementsByClassName("AddLine2")[0].value;
+    // var country = document.getElementsByClassName("country")[0].value;
+    // var city = document.getElementsByClassName("city")[0].value;
+    // var zip = document.getElementsByClassName("zip")[0].value;
+    // var state = document.getElementsByClassName("state")[0].value;
+    // var tel = document.getElementsByClassName("tel")[0].value;
+
+    // if(!Fname || !Lname || !email || !addressL1 || !addressL2 || !country || !city || !zip || !state || !tel)
+    // {
+    //      return;
+    // }
+    // else{
+        
+
+        // var item = new onlinePizza.shippinginfo(Fname,Lname,email,addressL1,addressL2,country,city,zip,state,tel);
+        // billing.push(item);
+        // onlinePizza.savebillingInfo();
+        var ele= "Re'";    
+        start="Re";
+    // } 
+        openPage('OrderR', start, 'orange')
+
+   // }
+
+    
+});
+
+
+console.log(start);
+
+//var blockedWorker = document.getElementById("defaultOpen").click();
+
 
 // Get the element with id="defaultOpen" and click on it
-//
-// $( document ).ready(function() {
+ $( document ).ready(function(event) {
+
+    document.getElementById(start).click();
    
-    
-// });
+});
+
+
+
+
 

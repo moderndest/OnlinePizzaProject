@@ -114,7 +114,7 @@
 
                     <div class="clearfix2"></div>
                     <!-- <button  class="btnC"  >Next</button> -->
-                    <button  class="btnC btnS">Next</button>
+                    <button  class="btnC btnS" onclick="openPage('Billing','Bill','orange')" type="button" >Next</button>
                 </form>
             </div>
 
@@ -189,7 +189,7 @@
                     </div>
                     
                 <div class="clearfix2"></div>
-                <button  class="btnC btnS">Next</button>
+                <button  class="btnC btnB" type="button">Next</button>
 
             </div>
 
@@ -280,7 +280,7 @@
                 <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
                             
 
-                <button  class="btnC btnB" onclick="openPage('OrderR','Re','orange')" >Next</button>
+                <button  class="btnC btnR" type="button" >Next</button>
             </div>
 
 
@@ -321,12 +321,14 @@
                     <p id="sub-total">
                         <strong>grandTotal : $<span id="grandTotal"></span></strong> 
                     </p>
+
+                    <div class="clearfix"></div>
+
+                    <button  class="btnC btnP" formaction="saveOrder.php" formmethod="POST">Place Order</button>
                         
                 </form>
             
-                <div class="clearfix"></div>
-
-                <button  class="btnC" >Place Order</button>
+                
                 <div class="clearfix"></div>
                 <div class="clearfix"></div>
 
