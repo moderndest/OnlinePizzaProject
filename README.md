@@ -1,3 +1,4 @@
 # OnlinePizzaProject
 
-TEST THE FILE USE FIREFOX BECAUSE THERE ARE ERROR ON THE JQUERY PLUGIN!!!!!!!!!!
+- FINISH VERSION -
+- You must have database local to run
