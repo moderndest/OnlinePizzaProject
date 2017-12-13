@@ -324,7 +324,7 @@
 
                     <div class="clearfix"></div>
 
-                    <button  class="btnC btnP" formaction="saveOrder.php" formmethod="POST">Place Order</button>
+                    <button  class="btnC btnP" type="button">Place Order</button>
                         
                 </form>
             

@@ -172,11 +172,70 @@ $(".btnR").click (function(event){
 });
 
 
+$(".btnP").click (function(event){
+    console.log("place the order");
+
+
+
+    // sessionStorage.setItem("valueA", '1' );
+    // sessionStorage.setItem("valueB", '2' );
+    // sessionStorage.setItem("valueC", '3' );
+    
+    // Create data object so we can submit it to the server 
+    var data = {};
+    for(var len = sessionStorage.length, i = 0; i < len; i++) {
+        var key =  sessionStorage.key(i);
+        data[key] = sessionStorage.getItem(key);
+    }
+
+    // var data = JSON.parse(sessionStorage.getItem("shoppingCart"));
+
+    var str_json = JSON.stringify(data);
+console.log(str_json);
+
+    
+
+
+
+    // $.post('saveOrder.php', { order: data })
+    // .success(function(event) {
+    //     alert('saved');
+    // })
+    // .error(function(event) { 
+    //     alert('Error: ' + event); 
+    // }); 
+    var token = "test";
+    
+    $.ajax({
+        type: "POST",
+        url: "saveOrder.php",
+        data: str_json,
+        success: function(event) {
+            alert("success!");
+            sessionStorage.clear();
+            window.location.href = "index.php";
+            
+            
+               },
+        error: function(event) {
+            alert("Placement Order error!");
+        // some debug could be here
+        }
+        
+      });
+   
+
+    
+});
+
+
+
+
+
+
 console.log(start);
 
 //var blockedWorker = document.getElementById("defaultOpen").click();
-
-
 // Get the element with id="defaultOpen" and click on it
  $( document ).ready(function(event) {
 

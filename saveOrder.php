@@ -4,22 +4,125 @@ include ('Connectdb.php');
 // echo '    ';
 // echo ($_POST['pswSigup']);
 
-// if session is not started
-session_start();
-$_SESSION["firstname"] = "Peter";
 
-$_SESSION["lastname"] = "Parker";
+// header("Content-Type: application/json; charset=UTF-8");
+// $obj = json_decode($_POST["shippingCart"], false);
+
+// $conn = new mysqli("name", "src", "price", "count");
+// $result = $conn->query("SELECT name FROM ".$obj->table." LIMIT ".$obj->limit);
+// $outp = array();
+// $outp = $result->fetch_all(MYSQLI_ASSOC);
+
+// echo json_encode($outp);
+
+
+
+
+
+echo($_POST['shoppingCart']);
+
+
+$result = $dbh->prepare("SELECT * FROM Product WHERE ProductName='$user'");
+$result->execute();
+$count = $result->rowCount();
+
+
+
+
+
+
+
+
+
+    $sql = "SELECT * FROM runningNo WHERE Name = 'R'";
+    $result =$dbh->prepare($sql);
+    $result->execute();
+    unset($data);
+    $i=0;
+    $data = array();
+
+
+   
+    foreach ($result->fetchAll(PDO::FETCH_ASSOC) as $row) {
+        $prefix=$row["Name"];
+        $number=$row["MAX"];
+        print_r($row);
+        //echo a row
+        //is working
+        }
+    echo ($prefix);
+    echo ($number);
+    $number=sprintf("%03d",++$number);
+    echo ($number);
+    $txtIDNo=$prefix.$number;
+
+    $dbh->query("INSERT INTO Orders (USERID,Username, Password) VALUES ('$txtIDNo', '$user', '$pass')");
+    echo $sql_header;
+    
+    //UPDATE RUNNING NUMBER
+    $sql = "SELECT * FROM runningNo WHERE Name = 'U'";
+    $result = $dbh->prepare($sql);
+    $result->execute();
+    unset($data);
+    $i=0;
+    $data = array();
+    foreach ($result->fetchAll(PDO::FETCH_ASSOC) as $row) {
+        $prefix=$row["Name"];
+        $number=$row["MAX"];
+        print_r($row);
+        }
+    echo ($number);
+    $number++;
+    echo ($number);
+
+    $dbh->query("UPDATE runningNo SET MAX = '{$number}' WHERE Name= 'U'");	
+
+// if session is not started
+
+
+
+
+
+
+// if(isset($_POST['shippingInfo']) && isset($_POST['billingInfo'])&& isset($_POST['shippingCart'])){
+//     $cart = $_POST['shippingCart'];
+//     $shippingInfo = $_POST['shippingInfo'];
+//     $bill = $_POST['billingInfo'];
+
+
+
+    
+    
+
+
+
+//     echo($_POST[$cart]);
+
+//     echo($_POST[$shippingInfo]);
+//     echo($_POST[$bill]);
+
+// }
+
+
+
+// session_name('shippingInfo');
+// print_r($_SESSION);
+// $_SESSION["firstname"] = "Peter";
+
+// $_SESSION["lastname"] = "Parker";
 
 // Accessing session data
 
-echo 'Hi, ' . $_SESSION["firstname"] . ' ' . $_SESSION["lastname"];
 
 
-$this->load->library("shippingInfo");
 
-$username = $this->nativeshippingInfo->get( 'Fname' );
 
-echo ($username);
+
+// $this->load->library("shippingInfo");
+
+// $username = $this->nativeshippingInfo->get( 'Fname' );
+
+// echo ($username);
 // store our current session
 // $my_sess = $_SESSION;
 
@@ -108,7 +211,6 @@ echo ($username);
 // 			header("location:../index.php");
 // 		}
 // 	}
-
 
 //header("location:index.php");
 ?>
