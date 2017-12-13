@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <!--
         Online Pizza 
-        Filename: header.html
+        Filename: header.php
      
-        Author: Chatsuda Rattarasan   
+        Author:sava    
         Date: DEC 6 2017
        -->
 
@@ -27,8 +27,9 @@
            <?php include 'header.php';?>
 
            <!--  ABOUTUS SECTION -->
-
+        
            <div class="clearfix"></div>
+    <div id="inner-wrapper">
            <div class="ourfamily">
                <p>Our Family</p>
    
@@ -58,6 +59,8 @@
            </div> 
            
             </div>
+
+    </div>
         <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
         <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
         <script  src="js/CartFunction.js"></script> 

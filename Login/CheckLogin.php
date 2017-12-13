@@ -30,9 +30,13 @@ if($count== 1){
   echo "<script type='text/javascript'>alert('$message');</script>";
   $seconds = 5 + time();
   setcookie(loggedin, date("F jS - g:i a"), $seconds);
+  $message = "Sign in success";
+  echo "<script type='text/javascript'>alert('$message');</script>";
   header("location:../index.php");
 }else{
   echo 'Incorrect Username or Password';
+  echo "<script type='text/javascript'>alert('$message');</script>";
+
 }
 
 ?>

@@ -43,7 +43,7 @@
             <span class="psw">Forgot <a href="#">password?</a></span>
         </div>
         
-        <p> OR </p>
+        
 
         <!-- SignUp Strat Here -->
 
@@ -64,7 +64,7 @@
                     <label><b>Repeat Password</b></label>
                     <input class="SignUpInput"type="password" placeholder="Repeat Password" name="psw-repeat" required>
                     <input class="SignUpInput"type="checkbox" checked="checked"> Remember me
-                    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                    <!-- <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p> -->
 
                     <div class="SignUpclearfix">
                         <button  type="button" onclick="document.getElementById('id02').style.display='none'" class="SignUpcancelbtn">Cancel</button>
