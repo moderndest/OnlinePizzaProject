@@ -2,7 +2,6 @@
 
 
 
-
 #inner-wrapper{
 	max-width: 100px;
 	margin: 0 auto;
@@ -45,17 +44,11 @@ p {
 }
 .section1 {
 	max-width: 350px;
-	margin: 2%;
+	margin: 2.5%;
 	display: block;
 	float: left;
 }
 
-#Pizzaicon{
-
-	margin:0,auto;
-	position: absolute;
-
-}
 
 .center {
 	margin: 0 auto;

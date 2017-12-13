@@ -1,3 +1,11 @@
+
+// Online Pizza 
+// Filename: Checkout.js
+
+// Author: Chatsuda Rattarasan   
+// Date: DEC 13 2017
+
+
 var onlinePizza = {};
 var shipping =[];
 var billing =[];
@@ -56,35 +64,12 @@ $(".btnS").click (function(event){
     var state = document.getElementsByClassName("state")[0].value;
     var tel = document.getElementsByClassName("tel")[0].value;
 
-
-    // console.log("hiiiiiiiii");
-    // console.log(Fname);
-    // console.log(Lname);
-    // console.log(email);
-    // console.log(addressL1);
-    // console.log(addressL2);
-    // console.log(zip);
-    // console.log(state);
-    // console.log(tel);
-
-        // if(!Fname || !Lname || !email || !addressL1 || !addressL2 || !country || !city || !zip || !state || !tel)
-        // {
-        //     retuen;
-        // }
-        // else{
-        
-
         var item = new onlinePizza.shippinginfo(Fname,Lname,email,addressL1,addressL2,country,city,zip,state,tel);
         shipping.push(item);
         onlinePizza.saveShipInfo();
         start="Bill";
 
-       //openPage('Bill', start, 'orange');
-        // document.getElementById(start).click();
-        
-        //var ele= "Bill";
-       
-        //}
+
 
     
  });
@@ -115,71 +100,40 @@ $(".btnB").click (function(event){
     var state = document.getElementsByClassName("state")[0].value;
     var tel = document.getElementsByClassName("tel")[0].value;
 
-    // if(!Fname || !Lname || !email || !addressL1 || !addressL2 || !country || !city || !zip || !state || !tel)
-    // {
-    //      return;
-    // }
-    // else{
-        
-
         var item = new onlinePizza.shippinginfo(Fname,Lname,email,addressL1,addressL2,country,city,zip,state,tel);
         billing.push(item);
-        onlinePizza.savebillingInfo();
-        var ele= "Pay'";    
+        onlinePizza.savebillingInfo();   
         start="Pay";
-    // } 
+
         openPage('Payment', start, 'orange');
-
-   // }
-
-    
+  
 });
 
 
-
+// button Go to Reveiw Order
 $(".btnR").click (function(event){
     console.log("savePayment");
-   
-    // var Fname = document.getElementsByClassName("fname")[0].value;
-    // var Lname = document.getElementsByClassName("lname")[0].value;
-    // var email = document.getElementsByClassName("email")[0].value;
-    // var addressL1 = document.getElementsByClassName("AddLine1")[0].value;
-    // var addressL2 = document.getElementsByClassName("AddLine2")[0].value;
-    // var country = document.getElementsByClassName("country")[0].value;
-    // var city = document.getElementsByClassName("city")[0].value;
-    // var zip = document.getElementsByClassName("zip")[0].value;
-    // var state = document.getElementsByClassName("state")[0].value;
-    // var tel = document.getElementsByClassName("tel")[0].value;
 
-    // if(!Fname || !Lname || !email || !addressL1 || !addressL2 || !country || !city || !zip || !state || !tel)
-    // {
-    //      return;
-    // }
-    // else{
-        
-
-        // var item = new onlinePizza.shippinginfo(Fname,Lname,email,addressL1,addressL2,country,city,zip,state,tel);
-        // billing.push(item);
-        // onlinePizza.savebillingInfo();
-        var ele= "Re'";    
+       // we plan to keep credit credit in session but we don't have time
         start="Re";
-    // } 
         openPage('OrderR', start, 'orange')
 
-   // }
-
+ 
     
 });
 
+
+// Button Place Order
 
 $(".btnP").click (function(event){
     console.log("place the order");
 
+    var order={};
 
 
-    // sessionStorage.setItem("valueA", '1' );
-    // sessionStorage.setItem("valueB", '2' );
-    // sessionStorage.setItem("valueC", '3' );
+   // order = JSON.parse(sessionStorage.getItem("shoppingCart"));
+   // order[1] = JSON.parse(sessionStorage.getItem("billingInfo"));
+    //order[2] = JSON.parse(sessionStorage.getItem("shippingInfo"));
     
     // Create data object so we can submit it to the server 
     var data = {};
@@ -188,28 +142,28 @@ $(".btnP").click (function(event){
         data[key] = sessionStorage.getItem(key);
     }
 
-    // var data = JSON.parse(sessionStorage.getItem("shoppingCart"));
+   
+    
+    var str_json = JSON.stringify(order);
+console.log(order);
 
-    var str_json = JSON.stringify(data);
-console.log(str_json);
 
     
+    // var json = jsObj2phpObj(order);
+    // console.log(json);
+    
+    // $.post("saveOrder.php",{json:json},function(event){
+    //     console.log(event);
+    // });
 
 
-
-    // $.post('saveOrder.php', { order: data })
-    // .success(function(event) {
-    //     alert('saved');
-    // })
-    // .error(function(event) { 
-    //     alert('Error: ' + event); 
-    // }); 
+  
     var token = "test";
     
     $.ajax({
         type: "POST",
         url: "saveOrder.php",
-        data: str_json,
+        data: data,
         success: function(event) {
             alert("success!");
             sessionStorage.clear();
@@ -246,4 +200,24 @@ console.log(start);
 
 
 
+
+function jsObj2phpObj(object){
+    var json= "{";
+    for(property in object){
+        var value = object[property];
+        if(typeof(value)=="string"){
+            json += '"'+property+'":"'+ value+","
+
+        }else{
+            if(!value[0]){
+                json += '"' + property+'":'+jsObj2phpObj(value)+',';
+            }else{
+                json += '"'+property+'":[';
+                for(prop in value)json += '"' + value[prop]+'",';
+                json = json.substr(0,json.length-1)+"],";
+            }
+        }
+    }
+    return json.substr(0,json.length-1)+"}";
+}
 

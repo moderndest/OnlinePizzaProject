@@ -77,6 +77,10 @@ button.SignUpButton1 {
     clear: both;
     display: table;
 }
+p{
+    color: #555;
+	font-family: 'Ubuntu Condensed', sans-serif;
+}
 
 /* Change styles for cancel button and signup button on extra small screens */
 @media screen and (max-width: 300px) {

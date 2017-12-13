@@ -61,6 +61,8 @@ if(isset($_POST['email']) && isset($_POST['pswSigup'])){
             echo ($number);
 
             $dbh->query("UPDATE runningNo SET MAX = '{$number}' WHERE Name= 'U'");	
+            $message = "Sigup Success";
+            echo "<script type='text/javascript'>alert('$message');</script>";
 			header("location:../index.php");
 		}
 	}

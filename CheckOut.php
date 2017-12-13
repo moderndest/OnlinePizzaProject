@@ -1,3 +1,10 @@
+<!--
+         Online Pizza 
+         Filename: index.php
+      
+         Author: Chatsuda Rattarasan &   
+         Date:  DEC 6 2017
+        -->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -336,13 +343,6 @@
         
             </div>
             <!-- /////////////ORDER REVIEW TAB  END//////////////// -->
-
-
-
-            
-            
-
-
 
         </div>
 
