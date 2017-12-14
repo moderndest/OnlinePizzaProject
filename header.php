@@ -31,7 +31,6 @@
                 </nav>
             </div>
             <a class="cartButton" href="cart.php">
-                <!-- <span class="cart">0</span> -->
                     <img class="cart" src="image/Button/cart.png">
                     <span  id="totalItems"><script>
                          document.getElementById("totalItems").innerHTML = sessionStorage.getItem("totalItems");

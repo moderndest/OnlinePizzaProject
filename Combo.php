@@ -12,9 +12,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie-edge">    
         <script src="js/loginPopup.js"></script>
         <link rel="stylesheet" href="css/style.css" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script> 
-        <!-- <script  src="js/addtocart.js"></script>  -->
-        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>        
         <script type="text/javascript" src="js/LoadFile.js"></script>   
         <link rel="stylesheet" href="css/ComboStyle.css"/>
         <title>Combo</title>

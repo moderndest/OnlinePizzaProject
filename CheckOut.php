@@ -1,8 +1,8 @@
 <!--
          Online Pizza 
-         Filename: index.php
+         Filename: CheckOut.php
       
-         Author: Chatsuda Rattarasan &   
+         Author: Chatsuda Rattarasan & Xiao Yang 
          Date:  DEC 6 2017
         -->
 <!DOCTYPE html>

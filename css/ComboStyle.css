@@ -1,4 +1,11 @@
 
+/* Online Pizza 
+Filename: ComboStyle.css
+
+Author: Chatsuda Rattarasan   
+Date:  6 Dec 2017   
+
+*/
 
 #Comboheader{
     /* margin-top: -5%; */
@@ -47,8 +54,6 @@ p {
 .add-to-cartAnimate {
     background:green;
     font-size: 80%;
-   
-    /* background: url(../image/Button/plus.png)center; */
 }
 
 .btn, a.btn {

@@ -1,3 +1,12 @@
+
+/* Online Pizza 
+Filename: Checkout.css
+
+Author: Chatsuda Rattarasan   
+Date:  6 Dec 2017   
+
+*/
+
 .clearfix{
 	clear: both;
 	padding: 2%;
@@ -41,19 +50,6 @@ body, html {
     height: 110%;
 }
 
-/* .btn, a.btn {
-	display: inline-block;
-	background: #f3a816;
-	color: #fff;
-	font: 1em 'Ubuntu Condensed', sans-serif;
-	padding: 0.3em 1em;
-	text-align: center;
-	border-radius: 4px;
-    border: 1px solid #f3a816;
-    text-decoration: none;
-    float: right;
-    
-} */
 
 #defaultOpen:active{
     background:#f3a816;
@@ -89,8 +85,3 @@ body, html {
 #AddLine1, #AddLine2{
     width: 250%;
 }
-
-/* #backbtn{
-    position: relative;
-    margin-top: -70px;
-} */
