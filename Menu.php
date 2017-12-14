@@ -108,7 +108,7 @@
             <div class="center">
 
                 <!-- PEPCI -->
-                <section class="section1 os-animation item" data-os-animation="zoomInLeft" data-os-animation-delay=".3s">		
+                <section class="section1 os-animation item" data-os-animation="bounceInRight" data-os-animation-delay=".3s">		
                 <button class="add-to-cartAnimate" src ="image/Pic/Pepci1.png" data-name="Pepci" data-price="1.50" type="button">Add to cart</button>
                     <img src="image/Pic/Pepci1.png" class="pizza">
                     <img src="image/label/labe.png" class="label">
@@ -116,7 +116,7 @@
                 </section>
 
                 <!-- COKE -->
-                <section class="section1 os-animation item" data-os-animation="jackInTheBox" data-os-animation-delay=".5s">		
+                <section class="section1 os-animation item" data-os-animation="bounceInRight" data-os-animation-delay=".5s">		
                 <button class="add-to-cartAnimate" src ="image/Pic/Coke.png" data-name="Coke" data-price="1.50" type="button">Add to cart</button>
                     <img src="image/Pic/Coke.png" class="pizza">
                     <img src="image/label/labe.png" class="label">

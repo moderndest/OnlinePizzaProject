@@ -37,6 +37,11 @@ onlinePizzaCart.setCountForItem = function(name, count){
     for(var i in this.cart){
         if(this.cart[i].name === name){
             this.cart[i].count = count;
+            if(this.cart[i].count < 1)
+            {
+                this.removeItemFromCartAll(name);
+                this.saveCart();
+            }
             break;
         }
     }
@@ -60,7 +65,7 @@ onlinePizzaCart.displayCart = function(){
     
     var output ="";
 
-    if( cartArray.length == 0 ) {
+    if( cartArray.length === 0 ) {
         $tableCartBody.html( "" );	
     } else {
 
@@ -96,10 +101,14 @@ onlinePizzaCart.removeItemFromCart =function (name){
     for(var i in onlinePizzaCart.cart){
         if(this.cart[i].name === name){
             this.cart[i].count --; 
+            console.log("test");
+            //console.log(this.cart[i].count);
             if(this.cart[i].count === 0){
                 this.cart.splice(i,1);
+                console.log("test 1");
+                break;
             }
-            break;
+            
         }
     }
     this.saveCart();
@@ -109,8 +118,8 @@ onlinePizzaCart.removeItemFromCart =function (name){
 onlinePizzaCart.removeItemFromCartAll = function(name){
 
     for (var i in onlinePizzaCart.cart){
-        if(onlinePizzaCart.cart[i].name === name){
-            onlinePizzaCart.cart.splice(i,1);
+        if(this.cart[i].name === name){
+            this.cart.splice(i,1);
             break;
         }
     }
