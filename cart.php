@@ -3,7 +3,7 @@
     Online Pizza 
     Filename: cart.php
 
-    Author: Chatsuda Rattarasan   
+    Author: Chatsuda Rattarasan & Xiao Yang  
     Date:  DEC 11 2017 -->
 <html lang="en">
     <head>

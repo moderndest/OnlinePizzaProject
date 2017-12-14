@@ -1,9 +1,9 @@
 <!DOCTYPE html>
         <!--
          Online Pizza 
-         Filename: index.php
+         Filename: index.php 
       
-         Author: Chatsuda Rattarasan   
+         Author: Chatsuda Rattarasan & Ya-Hsuan Lin   
          Date:  DEC 6 2017
         -->
 
