@@ -39,3 +39,16 @@ function onScrollInit( items, trigger ) {
  onScrollInit( $('.os-animation') );
  onScrollInit( $('.staggered-animation'), $('.staggered-animation-container') );
 });
+
+function myFunction() {
+  alert("You have successfully make your order at :" + new Date());
+}
+
+ /*add to cart*/
+
+$(function added() {
+$('.add-to-cartAnimate').on('click', function() {
+  $(this).addClass('active');
+  $(this).text("added");
+});
+})

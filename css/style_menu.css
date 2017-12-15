@@ -141,9 +141,14 @@ p {
 
 /* ADD TO CART*/
 .add-to-cartAnimate {
-    background:green;
+    background-color:green;
 	font-size: 80%;
 }
+
+.active {
+	background-color: rgb(0, 80, 0);
+	color: rgb(168, 168, 168);
+  }
 
 
 /*waypoints*/
