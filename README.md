@@ -8,7 +8,7 @@ The members are:
 - 4.Chung-yang Li
 - 5.Xiao Yang  
 - 6.Da Lee
-- 7. Dexuan Li
+- 7.Dexuan Li
 
 To run the application
 - you need to have a local server install you computer (XAMPP is the suggestion for using)
