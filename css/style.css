@@ -44,7 +44,7 @@ body{
     background: -o-linear-gradient(black, rgb(88, 87, 87)); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(black, rgb(88, 87, 87)); /* For Firefox 3.6 to 15 */
     background: linear-gradient(black, rgb(88, 87, 87)); /* Standard syntax */
-	color: #555;
+	color:white;
 	font-family: 'Ubuntu Condensed', sans-serif;
 	line-height: 190%;
 	text-align: center;
@@ -96,7 +96,8 @@ a:hover, .current {
 
 /*-- Start Inner Wrapper ---*/
 #inner-wrapper{
-	max-width: 1200px;
+	position: relative;
+	max-width: 100%;
 	margin: 0 auto;
 }
 .clearfix{

@@ -12,7 +12,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie-edge">
        
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
         <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
         <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
 
@@ -43,12 +42,13 @@
             <!--Remaining section-->
     
             <!-- Continue Coding here -->
+            
         <div class="inner-wrapper">
             <img src="image/icon/Pizza.png" class="os-animation" data-os-animation="flash" data-os-animation-delay=".3s">
             <div class="clearfix"></div>
             <div class="center">  
                     <!--       PEPPERONI           -->
-                <section class="section1 os-animation item" data-os-animation="bounceInLeft" data-os-animation-delay=".3s">
+                <section class="one-third os-animation item" data-os-animation="bounceInLeft" data-os-animation-delay=".3s">
                     <button class="add-to-cartAnimate" src ="image/Pic/smallset.png" data-name="Pepperoni" data-price="5.99" type="button">Add to cart</button>					
                     <img src="image/Pic/Pepperoni.png" class="pizza">
                     <img src="image/label/labe.png" class="label">
@@ -56,7 +56,7 @@
 
                 </section>
                 <!--       SUPRREME           -->
-                <section class="section1 os-animation item" data-os-animation="bounceInDown" data-os-animation-delay=".3s">
+                <section class="one-third os-animation item" data-os-animation="bounceInDown" data-os-animation-delay=".3s">
                     <button class="add-to-cartAnimate" src ="image/Pic/Supreme.png" data-name="Supreme" data-price="5.99" type="button">Add to cart</button>
                     <img src="image/Pic/Supreme.png" class="pizza">
                     <img src="image/label/labe.png" class="label">
@@ -64,7 +64,7 @@
 
                 </section>
                     <!--       Customize           -->
-                <section class="section1 os-animation item" data-os-animation="bounceInRight" data-os-animation-delay=".3s">
+                <section class="one-third os-animation item" data-os-animation="bounceInRight" data-os-animation-delay=".3s">
                     <button class="add-to-cartAnimate" src ="image/Pic/www.newyorkvinnyspizza.com.png" data-name="Customize" data-price="5.99" type="button">Add to cart</button>		
                     <img src="image/Pic/www.newyorkvinnyspizza.com.png" class="pizza">
                     <img src="image/label/labe.png" class="label">
@@ -78,7 +78,7 @@
             <div class="center">
                 
                 <!-- Baffalo wing -->
-                <section class="section1 os-animation item" data-os-animation="fadeInUp" data-os-animation-delay=".3s">		
+                <section class="one-third os-animation item" data-os-animation="fadeInUp" data-os-animation-delay=".3s">		
                     <button class="add-to-cartAnimate" src ="image/Pic/wings_hot1.png" data-name="Baffalo wing" data-price="3.99" type="button">Add to cart</button>
                     <img src="image/Pic/wings_hot1.png" class="pizza">
                     <img src="image/label/labe.png" class="label">
@@ -86,7 +86,7 @@
                 </section>
 
                 <!-- Bread -->
-                <section class="section1 os-animation item" data-os-animation="fadeInUp" data-os-animation-delay=".5s">		
+                <section class="one-third os-animation item" data-os-animation="fadeInUp" data-os-animation-delay=".5s">		
                     <button class="add-to-cartAnimate" src ="image/Pic/garlic_bread.png" data-name="Bread" data-price="2.00" type="button">Add to cart</button>
                     <img src="image/Pic/garlic_bread.png" class="pizza">
                     <img src="image/label/labe.png" class="label">
@@ -94,7 +94,7 @@
                 </section>
 
                 <!-- French fries -->
-                <section class="section1 os-animation item" data-os-animation="fadeInUp" data-os-animation-delay=".7s">		
+                <section class="one-third os-animation item" data-os-animation="fadeInUp" data-os-animation-delay=".7s">		
                     <button class="add-to-cartAnimate" src ="image/Pic/french-fries.png" data-name="French Fries" data-price="3.00" type="button">Add to cart</button>
                     <img src="image/Pic/french-fries.png" class="pizza">
                     <img src="image/label/labe.png" class="label">
@@ -108,7 +108,7 @@
             <div class="center">
 
                 <!-- PEPCI -->
-                <section class="section1 os-animation item" data-os-animation="bounceInRight" data-os-animation-delay=".3s">		
+                <section class="one-third os-animation item" data-os-animation="bounceInRight" data-os-animation-delay=".3s">		
                 <button class="add-to-cartAnimate" src ="image/Pic/Pepci1.png" data-name="Pepci" data-price="1.50" type="button">Add to cart</button>
                     <img src="image/Pic/Pepci1.png" class="pizza">
                     <img src="image/label/labe.png" class="label">
@@ -116,7 +116,7 @@
                 </section>
 
                 <!-- COKE -->
-                <section class="section1 os-animation item" data-os-animation="bounceInRight" data-os-animation-delay=".5s">		
+                <section class="one-third os-animation item" data-os-animation="bounceInRight" data-os-animation-delay=".5s">		
                 <button class="add-to-cartAnimate" src ="image/Pic/Coke.png" data-name="Coke" data-price="1.50" type="button">Add to cart</button>
                     <img src="image/Pic/Coke.png" class="pizza">
                     <img src="image/label/labe.png" class="label">
@@ -124,7 +124,7 @@
                 </section>
 
                 <!-- SPRITE -->
-                <section class="section1 os-animation item" data-os-animation="bounceInRight" data-os-animation-delay=".7s">		
+                <section class="one-third os-animation item" data-os-animation="bounceInRight" data-os-animation-delay=".7s">		
                 <button class="add-to-cartAnimate" src ="image/Pic/sprite1.png" data-name="SpriteCoke" data-price="1.50" type="button">Add to cart</button>
                     <img src="image/Pic/sprite1.png" class="pizza">
                     <img src="image/label/labe.png" class="label">

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Dec 12, 2017 at 04:39 PM
+-- Generation Time: Dec 15, 2017 at 02:43 AM
 -- Server version: 10.1.28-MariaDB
 -- PHP Version: 7.1.11
 
@@ -84,6 +84,39 @@ CREATE TABLE `MobileInfo` (
   `DriverPhoneNo` int(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `MobileInfo`
+--
+
+INSERT INTO `MobileInfo` (`MobileID`, `OrderNo`, `ClientID`, `ShippingNo`, `Geolocation`, `DriverPhoneNo`) VALUES
+('M001', 'R001', 'G001', 'S001', 'latitude: 42.339244, longitude: -71.090835', 617999999),
+('M002', 'R002', 'G001', 'S001', 'latitude: 42.339244, longitude: -71.090835', 617999999);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `Orders`
+--
+
+CREATE TABLE `Orders` (
+  `OrderNo` varchar(50) NOT NULL,
+  `ClientID` varchar(50) NOT NULL,
+  `ProductID` varchar(50) NOT NULL,
+  `Quantity` int(1) NOT NULL,
+  `Total` double NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `Orders`
+--
+
+INSERT INTO `Orders` (`OrderNo`, `ClientID`, `ProductID`, `Quantity`, `Total`) VALUES
+('R001', 'C001', 'P001', 1, 6),
+('R002', 'G001', 'P001', 1, 888),
+('R003', 'G002', 'P001', 6, 888),
+('R004', 'G002', 'P001', 6, 888),
+('R005', 'G002', 'P001', 6, 888);
+
 -- --------------------------------------------------------
 
 --
@@ -145,8 +178,8 @@ CREATE TABLE `runningNo` (
 
 INSERT INTO `runningNo` (`Name`, `MAX`) VALUES
 ('P', 12),
-('R', 2),
-('U', 3);
+('R', 5),
+('U', 5);
 
 -- --------------------------------------------------------
 
@@ -190,7 +223,9 @@ CREATE TABLE `USER` (
 INSERT INTO `USER` (`USERID`, `Username`, `Password`) VALUES
 ('U001', 'user1', '1234'),
 ('U002', 'user2', '1234'),
-('U003', 'user3', '1234');
+('U003', 'user3', '1234'),
+('U004', 'user4@gmail.cpm', '1234'),
+('U005', 'user5@gmail.com', '12345');
 
 --
 -- Indexes for dumped tables
@@ -217,6 +252,14 @@ ALTER TABLE `MobileInfo`
   ADD PRIMARY KEY (`MobileID`),
   ADD KEY `ClientID` (`ClientID`),
   ADD KEY `ShippingNo` (`ShippingNo`);
+
+--
+-- Indexes for table `Orders`
+--
+ALTER TABLE `Orders`
+  ADD PRIMARY KEY (`OrderNo`),
+  ADD KEY `ClientID` (`ClientID`),
+  ADD KEY `Order_ibfk_1` (`ProductID`);
 
 --
 -- Indexes for table `Payment`
@@ -266,6 +309,12 @@ ALTER TABLE `Client`
 ALTER TABLE `MobileInfo`
   ADD CONSTRAINT `MobileInfo_ibfk_1` FOREIGN KEY (`ClientID`) REFERENCES `Client` (`ClinetID`),
   ADD CONSTRAINT `MobileInfo_ibfk_2` FOREIGN KEY (`ShippingNo`) REFERENCES `ShippingAdress` (`ShippingAdreessNo`);
+
+--
+-- Constraints for table `Orders`
+--
+ALTER TABLE `Orders`
+  ADD CONSTRAINT `Orders_ibfk_1` FOREIGN KEY (`ProductID`) REFERENCES `Product` (`ProductNo`);
 
 --
 -- Constraints for table `Payment`

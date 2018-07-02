@@ -85,8 +85,8 @@ filter: progid:DXImageTransform.Microsoft.Alpha(opacity=40);
 }
 
 #inner-wrapper{
-	max-width: 100px;
-	margin: 0 auto;
+	max-width: 100%;
+	margin: 0, auto;
 }
 container {
 	position: relative;
@@ -125,15 +125,17 @@ p {
 	top: -110px;
 }
 .section1 {
-	max-width: 350px;
-	margin: 2.5%;
-	display: block;
+	width: 29%;
 	float: left;
+	margin: 2%;
 }
 
 
+
 .center {
-	margin: 0 auto;
+	position: relative;
+	padding: 20px;
+	margin: 0 ,auto;
 	max-width: 100%;
 	font-size: 200%;	
 }
@@ -161,16 +163,10 @@ p {
 @media screen and (max-width: 840px){
 
 	
-	.section1 {
-		max-width: 350px;
-		margin: 0 auto;
-		
-		display: block;
-		float: left;
-	}
+
 	.center {
-		margin: 0 auto;
-		max-width: 400px;
+		margin: 0 ,auto;
+		
 		font-size: 200%;
 		
 	}
